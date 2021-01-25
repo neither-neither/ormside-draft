@@ -4,7 +4,7 @@ const projects = [
     image:
       "https://edm.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTcyMzQwMjI0NDAyMTM5MDc2/tiesto.jpg",
     text: `If you didn't already know, Tijs Michiel Verwest, better known as Tiesto, is a Dutch DJ and producer that has been in the game for over 20 years. He was the first DJ in history to play at the Olympics and has made an insane amount of achievements that don't really need to be listed here. No matter who you are, you know Tiesto, or at least in name. Hell, my mom even knows about Tiesto! So what is it about Tiesto that brought him to the top and kept him there? Well there's a few things, and they are certain aspects that every major DJ or artist needs in order to stay in the spotlight.`,
-    link: "projects/paul-purgas.html",
+    link: "paul-purgas.html",
   },
   {
     title: "Judge Jules",
