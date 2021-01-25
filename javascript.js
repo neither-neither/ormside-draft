@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Tony De Vit",
     image:
-      "https://www.frozenuk.com/wp-content/uploads/2018/07/Tony-devit5.jpg",
+      "https://fourfourmag.com/wp-content/uploads/2017/03/Screen-Shot-2018-03-13-at-23.05.49.png",
     text: `Tony de Vit began DJing at the age of 17, as a wedding DJ in 1976 playing at local pubs in his home town of Kidderminster, followed in his early 20s, by his first residency at the 'Nightingale' in Birmingham on a Monday night where he played pop and Hi-NRG. He would often have to sweep floors and empty ashtrays after the club had closed.[15] In a relatively short space of time de Vit, through his talent and the diversity of his music, helped establish the 'Nightingale' as a respected club. During the early 1980s, he worked at Wolverhampton's Beacon Radio, playing club tracks during a regular late-night slot on the 1922 show hosted by Mike Baker of Smooth FM).`,
     link: "https://en.wikipedia.org/wiki/Tony_De_Vit",
   },
