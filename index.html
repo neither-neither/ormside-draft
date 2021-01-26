@@ -54,16 +54,16 @@
         <div class="section-cont">
           <div id="radio-cont">
             <div class="radio-options">
-              <a href=""
-                ><i class="fas fa-play radio-logo"></i> <br />
-                Listen Live</a
-              >
-            </div>
-            <div class="radio-options">
-              <a href="archive.html"
-                ><i class="fas fa-folder radio-logo"></i> <br />
-                Archive</a
-              >
+              <button id="radio-btn" value="off">
+                <i class="fas fa-play"> </i>
+                <p id="radio-btn-text">Listen Live</p>
+              </button>
+              <a href="archive.html">
+                <button id="archive-btn">
+                  <i class="fas fa-folder radio-logo"> </i>
+                  <p id="radio-btn-text">Archive</p>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -93,8 +93,21 @@
               <input type="email" name="" id="" placeholder="Email address" />
               <button>Subscribe</button>
             </form>
+            <div></div>
+            <div class="social">
+              <a
+                href="https://www.instagram.com/ormsideprojects/"
+                target="_blank"
+                ><i class="fab fa-instagram social-logo"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/ormsideprojects/"
+                target="_blank"
+                ><i class="fab fa-facebook social-logo"></i
+              ></a>
+            </div>
           </div>
-          <div id="social">
+          <!-- <div id="social">
             <a href="https://www.instagram.com/ormsideprojects/" target="_blank"
               ><i class="fab fa-instagram logo"></i
             ></a>
@@ -102,8 +115,10 @@
               ><i class="fab fa-facebook logo"></i
             ></a>
           </div>
+          -->
         </div>
       </footer>
     </main>
+    <audio id="audio1" src="shadow.mp3"></audio>
   </body>
 </html>

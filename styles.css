@@ -199,6 +199,14 @@ article {
 }
 */
 
+#radio-btn,
+#archive-btn {
+  background: transparent;
+  color: #000;
+  border: 0;
+  font-size: 5rem;
+}
+
 #radio-cont {
   display: flex;
   flex-direction: row;
@@ -206,24 +214,23 @@ article {
   align-items: center;
 }
 
-.radio-logo {
-  font-size: 5rem;
-  padding: 3rem;
-}
-
 .radio-options {
   font-size: 2.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border: none;
   text-align: center;
-  width: 20%;
-  margin: 0 3rem;
+  width: 35%;
 }
 
 .radio-options a {
   color: #000;
+}
+
+#radio-btn-text {
+  font-size: 2.5rem;
+  margin-top: 2rem;
 }
 
 /*
@@ -240,10 +247,10 @@ article {
 
 .archive-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   gap: 5px 5px;
-  width: 50%;
+  width: 80%;
   margin: 1rem auto 0;
 }
 
@@ -276,12 +283,13 @@ img:hover {
 .grid-container {
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
   gap: 50px 0px;
   grid-template-areas:
     "team staff"
     "contact address"
-    "sub form";
+    "sub form"
+    "empty social";
   width: 40%;
   margin: 0 auto;
   text-align: left;
@@ -310,6 +318,11 @@ img:hover {
 
 .sub {
   grid-area: sub;
+}
+
+.social {
+  font-size: 30px;
+  text-align: left;
 }
 
 #mailing-list {
@@ -343,16 +356,10 @@ img:hover {
   color: white;
 }
 
-#social {
-  margin: 3em auto;
-  font-size: 30px;
-  width: 40%;
-  text-align: center;
-}
-
-.logo {
-  margin: 0 1em;
+.social-logo {
   color: #000;
+  margin-right: 3em;
+  margin-top: 2rem;
 }
 
 /* =====================================================================================  
