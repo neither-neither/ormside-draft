@@ -28,7 +28,7 @@ const projects = [
 const projectTitle = document.querySelector("#project-title");
 const projectImg = document.querySelector(".project-image");
 const projectText = document.querySelector(".project-text");
-const projectLink = document.querySelector("#read-more-link");
+const projectLink = document.querySelector(".read-more-link");
 
 // sets initial assets of project section to index 0 of projects object
 let i = 0;
@@ -72,15 +72,66 @@ radioBtn.addEventListener("click", () => {
     console.log(radioBtn.value);
     audio1.pause();
     radioBtn.innerHTML =
-      "<i class='fas fa-play'></i><p id='radio-btn-text'>Listen Live</p>";
+      "<i class='fas fa-play radio-logo'></i><p id='radio-btn-text'>Listen Live</p>";
     radioBtn.value = "off";
     console.log(radioBtn.value);
   } else {
     console.log(radioBtn.value);
     audio1.play();
     radioBtn.innerHTML =
-      "<i class='fas fa-pause'></i><p id='radio-btn-text'>Listen Live</p>";
+      "<i class='fas fa-pause radio-logo'></i><p id='radio-btn-text'>Listen Live</p>";
     radioBtn.value = "on";
     console.log(radioBtn.value);
   }
 });
+
+// Time
+
+const currentShowImg1 = document.querySelector("#current-show-img-1");
+const currentShowImg2 = document.querySelector("#current-show-img-2");
+const currentShowImg3 = document.querySelector("#current-show-img-3");
+const currentShowImg4 = document.querySelector("#current-show-img-4");
+
+// calls the checkTime function every minute
+setInterval(checkTime, 5 * 1000);
+
+// checks the time and prints to console log
+function checkTime() {
+  let currentTime = new Date();
+  let currentSec = currentTime.getSeconds();
+  if (currentSec >= 0 && currentSec <= 14) {
+    currentShowImg1.style.filter = "none";
+  } else {
+    currentShowImg1.style.filter = "grayscale(100%)";
+  }
+  if (currentSec >= 15 && currentSec <= 29) {
+    currentShowImg2.style.filter = "none";
+  } else {
+    currentShowImg2.style.filter = "grayscale(100%)";
+  }
+  if (currentSec >= 30 && currentSec <= 44) {
+    currentShowImg3.style.filter = "none";
+  } else {
+    currentShowImg3.style.filter = "grayscale(100%)";
+  }
+  if (currentSec >= 45 && currentSec <= 59) {
+    currentShowImg4.style.filter = "none";
+  } else {
+    currentShowImg4.style.filter = "grayscale(100%)";
+  }
+  console.log("the browser has just checked the time");
+}
+
+//.toLocaleTimeString("en-US")
+
+/*
+const d = new Date();
+let d = new Date();
+
+var currentMin = d.getMinutes();
+if (currentMin >= 0 && currentMin <= 35) {
+  currentShowImg1.style.filter = "none";
+} else {
+  currentShowImg1.style.filter = "grayscale(100%)";
+}
+*/

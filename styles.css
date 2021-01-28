@@ -104,10 +104,28 @@ section {
   height: 100vh;
 }
 
-.archive-cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.home-btn {
+  font-size: 3rem;
+  position: fixed;
+  right: 0;
+  transform: scaleX(-1);
+  padding: 12px;
+  color: black;
+}
+
+.back-btn {
+  font-size: 1.5rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 12px;
+  color: black;
+  background: transparent;
+  border: none;
+}
+
+.fa-angle-left {
+  margin-right: 5px;
 }
 
 /* =====================================================================================  
@@ -118,7 +136,7 @@ section {
   background: #a3b3a7;
 }
 
-#projects a {
+.read-more-link {
   text-decoration: underline;
   color: #000;
 }
@@ -157,6 +175,14 @@ article {
   margin: 0 0 0 2em;
 }
 
+.project-page-text p {
+  margin: 0 0 2rem;
+}
+
+.project-page-text iframe {
+  margin: 5px 5px;
+}
+
 #project-text-div {
   text-align: left;
   margin: 0 0 0 2em;
@@ -190,23 +216,6 @@ article {
   background: #e7e1d3;
 }
 
-/*
-#play-btn {
-  position: absolute;
-  margin: 0.5em 0 0 4.5em;
-  font-size: 3rem;
-  color: #000;
-}
-*/
-
-#radio-btn,
-#archive-btn {
-  background: transparent;
-  color: #000;
-  border: 0;
-  font-size: 5rem;
-}
-
 #radio-cont {
   display: flex;
   flex-direction: row;
@@ -214,22 +223,69 @@ article {
   align-items: center;
 }
 
+#radio-current-shows {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2;
+  gap: 5px 5px;
+  width: 60%;
+  margin: 0 auto 3rem;
+}
+
+#current-show-img-1,
+#current-show-img-2,
+#current-show-img-3,
+#current-show-img-4 {
+  max-width: 100%;
+  filter: grayscale(100%);
+}
+
+#radio-current-shows p {
+  font-size: 1rem;
+}
+
+#current-show-info-1,
+#current-show-info-2,
+#current-show-info-3,
+#current-show-info-4 {
+  opacity: 0;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+#current-show-1:hover #current-show-info-1,
+#current-show-2:hover #current-show-info-2,
+#current-show-3:hover #current-show-info-3,
+#current-show-4:hover #current-show-info-4 {
+  opacity: 1;
+  transition: ease-in-out;
+  transition-duration: 1s;
+  transition-property: opacity;
+}
+
 .radio-options {
-  font-size: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: none;
   text-align: center;
-  width: 35%;
+  width: 22%;
 }
 
 .radio-options a {
   color: #000;
 }
 
+#radio-btn,
+#archive-btn {
+  background: transparent;
+  color: #000;
+  border: 0;
+  font-size: 3.5rem;
+}
+
 #radio-btn-text {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-top: 2rem;
 }
 
@@ -238,7 +294,14 @@ article {
    ===================================================================================== */
 
 #archive {
-  background: #e7e1d3;
+  background-color: #e7e1d3;
+}
+
+.archive-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
 #archive-image {
@@ -247,10 +310,10 @@ article {
 
 .archive-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  gap: 5px 5px;
-  width: 80%;
+  gap: 20px 20px;
+  width: 70%;
   margin: 1rem auto 0;
 }
 
