@@ -82,6 +82,7 @@ a:hover {
 #nav-bar a:hover {
   background-color: #000;
   color: #fff;
+  opacity: 1;
 }
 
 .home-btn {
