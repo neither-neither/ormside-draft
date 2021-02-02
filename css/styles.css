@@ -1,0 +1,308 @@
+html {
+  font-family: "Helvetica", "Arial", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-size: 10rem;
+}
+
+h2 {
+  color: #000;
+  font-size: 4rem;
+  margin: 0;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+p {
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: lighter;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+/* =====================================================================================  
+   Header - styles for the main header section of the home page
+   ===================================================================================== */
+
+#site-header {
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* =====================================================================================  
+   Navigation - styles for the navigation elements
+   ===================================================================================== */
+
+#nav-bar {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+#nav-bar a {
+  margin: 0.25rem 3rem;
+  text-decoration: none;
+  padding: 0 0.25rem;
+}
+
+#nav-bar a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.home-btn {
+  padding: 12px;
+  position: fixed;
+  right: 0;
+  height: 70px;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  bottom: 0;
+  font-size: 1.5rem;
+  padding: 12px;
+  position: fixed;
+  left: 0;
+}
+
+.fa-angle-left {
+  margin-right: 5px;
+}
+
+.logo-link {
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
+  padding-top: 1rem;
+  text-decoration: none;
+}
+
+.logo-link p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+/* =====================================================================================  
+   Sections - styles for the sections on the home page
+   ===================================================================================== */
+
+.section-cont {
+  display: flex;
+  height: 100vh;
+}
+
+.section-inner-cont {
+  /*align-items: center;*/
+  display: flex;
+  height: 90%;
+  margin: auto;
+  /*justify-content: space-evenly;*/
+  width: 90%;
+}
+
+.section-left-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.section-right-panel {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.section-header {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+#section-nav {
+  align-items: center;
+  display: flex;
+  padding-left: 1rem;
+}
+
+.project-nav {
+  background-color: transparent;
+  border: none;
+}
+
+.project-nav:hover {
+  opacity: 0.6;
+}
+
+#project-nav-btn-right,
+#project-nav-btn-left {
+  padding: 0 0.5rem;
+  height: 30px;
+}
+
+.play-radio {
+  height: 30px;
+}
+
+#section-text-header {
+  margin-bottom: 2rem;
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+}
+
+.section-link {
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+/* =====================================================================================  
+   Projects - styles for the projects section on the home page
+   ===================================================================================== */
+
+#projects {
+  background: #bbc1bc;
+}
+
+#project-time {
+  font-size: 1rem;
+}
+
+#project-img {
+  /*max-width: 60%;*/
+  width: 550px;
+  height: 550px;
+}
+
+/* =====================================================================================  
+   Radio
+   ===================================================================================== */
+
+#radio {
+  background: #e7e1d3;
+}
+
+#radio-current-shows {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2;
+  gap: 15px 15px;
+  width: 60%;
+  margin: 0 auto 3rem;
+}
+
+#radio-current-shows img {
+  max-width: 100%;
+}
+
+.radio-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+/*   
+   Radio - individual show page
+   ===================================================================================== */
+
+/* =====================================================================================  
+   Info
+   ===================================================================================== */
+
+#info {
+  background: #faf8f8;
+}
+
+#info-container-grid {
+  display: flex;
+}
+
+#info-left {
+  margin-right: 6rem;
+  width: 35%;
+}
+
+#info-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.social-logo {
+  font-size: 2.5rem;
+  margin: 3rem 5rem 0 0;
+}
+
+#mailing-list label,
+#email {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#mailing-list input {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  padding: 4px;
+  width: 40%;
+}
+
+#mailing-list button {
+  background-color: transparent;
+  border: 0;
+  font-size: 1em;
+  padding: 4px;
+}
+
+#mailing-list button:hover {
+  background-color: #000;
+  color: white;
+}
