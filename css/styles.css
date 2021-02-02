@@ -128,24 +128,38 @@ a:hover {
    Sections - styles for the sections on the home page
    ===================================================================================== */
 
-.section-cont {
+#site-header {
   display: flex;
-  height: 100vh;
+}
+
+.section-cont {
+  /* display: flex;*/
+  min-height: 100vh;
 }
 
 .section-inner-cont {
-  /*align-items: center;*/
   display: flex;
-  height: 90%;
-  margin: auto;
-  /*justify-content: space-evenly;*/
+  margin: 0 auto;
+  /*padding: 3rem 0;*/
   width: 90%;
+  min-height: 100vh;
 }
 
 .section-left-panel {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 40%;
+  padding: 3rem 0;
+}
+
+#radio .section-left-panel {
+  width: 45%;
+}
+
+.section-left-panel-2 {
+  display: flex;
+  flex-direction: column;
   width: 40%;
 }
 
@@ -194,7 +208,7 @@ a:hover {
 .section-text {
   display: flex;
   flex-direction: column;
-  height: 75%;
+  height: 100%;
 }
 
 .section-link {
@@ -216,9 +230,7 @@ a:hover {
 }
 
 #project-img {
-  /*max-width: 60%;*/
-  width: 550px;
-  height: 550px;
+  max-width: 40%;
 }
 
 /* =====================================================================================  
@@ -248,10 +260,6 @@ a:hover {
   padding: 0;
 }
 
-/*   
-   Radio - individual show page
-   ===================================================================================== */
-
 /* =====================================================================================  
    Info
    ===================================================================================== */
@@ -266,40 +274,51 @@ a:hover {
 
 #info-left {
   margin-right: 6rem;
-  width: 35%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #info-right {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 35%;
 }
 
+/*
+#social {
+  margin-top: 3rem;
+}
+*/
+
 .social-logo {
-  font-size: 2.5rem;
-  margin: 3rem 5rem 0 0;
+  font-size: 2rem;
+  margin: 0 5rem 0 0;
 }
 
 #mailing-list label,
 #email {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem;*/
   font-weight: bold;
   text-decoration: none;
 }
 
 #mailing-list input {
   background-color: transparent;
-  border: none;
-  font-size: 1em;
+
   padding: 4px;
   width: 40%;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #000;
 }
 
 #mailing-list button {
   background-color: transparent;
   border: 0;
-  font-size: 1em;
+
   padding: 4px;
 }
 
