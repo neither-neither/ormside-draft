@@ -43,6 +43,12 @@ button:hover {
 
 a {
   color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 
 /* =====================================================================================  
@@ -50,38 +56,30 @@ a {
    ===================================================================================== */
 
 #site-header {
-  background-color: #fff;
-  color: #000;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
-  line-height: 1;
-  width: 90%;
   margin: 0 auto;
-  padding: 0;
+  width: 90%;
 }
 
 /* =====================================================================================  
    Navigation - styles for the navigation elements
    ===================================================================================== */
 
-#header-nav {
+#nav-bar {
   align-items: flex-start;
   display: flex;
-  font-size: 2.5rem;
   flex-direction: column;
-  width: 100%;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 
-#header-nav a {
-  margin: 0.5rem 3rem;
+#nav-bar a {
+  margin: 0.25rem 3rem;
   text-decoration: none;
+  padding: 0 0.25rem;
 }
 
-#header-nav a:hover {
+#nav-bar a:hover {
   background-color: #000;
   color: #fff;
 }
@@ -107,37 +105,40 @@ a {
   margin-right: 5px;
 }
 
-.archive-link {
-  font-size: 2rem;
-  display: flex;
+.logo-link {
   align-items: center;
-  padding: 1rem 0;
+  display: flex;
+  font-size: 2rem;
+  padding-top: 1rem;
   text-decoration: none;
 }
 
-.archive-link p {
-  margin-left: 1rem;
+.logo-link p {
   font-size: 1rem;
   font-weight: bold;
+  margin-left: 1rem;
+}
+
+.logo-link:hover {
+  opacity: 0.6;
 }
 
 /* =====================================================================================  
    Sections - styles for the sections on the home page
    ===================================================================================== */
 
-section {
-  height: 100vh;
-  display: flex;
-}
-
 .section-cont {
   display: flex;
-  flex-direction: row;
+  height: 100vh;
+}
+
+.section-inner-cont {
+  /*align-items: center;*/
+  display: flex;
   height: 90%;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 90%;
   margin: auto;
+  /*justify-content: space-evenly;*/
+  width: 90%;
 }
 
 .section-left-panel {
@@ -145,30 +146,34 @@ section {
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
-  height: 100%;
 }
 
 .section-right-panel {
-  width: 60%;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+  width: 60%;
 }
 
 .section-header {
   display: flex;
-  flex-direction: row;
   margin-bottom: 2rem;
 }
 
 #section-nav {
-  font-size: 2rem;
-  display: flex;
-  flex-direction: row;
   align-items: center;
+  display: flex;
   padding-left: 1rem;
+}
+
+.project-nav {
+  background-color: transparent;
+  border: none;
+}
+
+.project-nav:hover {
+  opacity: 0.6;
 }
 
 #project-nav-btn-right,
@@ -177,7 +182,7 @@ section {
   height: 30px;
 }
 
-.play {
+.play-radio {
   height: 30px;
 }
 
@@ -191,22 +196,10 @@ section {
   height: 75%;
 }
 
-.section-text-info {
-  height: 80%;
-}
-
 .section-link {
-  text-decoration: none;
   font-weight: bold;
   font-size: 0.8rem;
-}
-
-#project-img {
-  max-width: 60%;
-}
-
-#event-time {
-  font-size: 1rem;
+  text-decoration: none;
 }
 
 /* =====================================================================================  
@@ -217,6 +210,16 @@ section {
   background: #bbc1bc;
 }
 
+#project-time {
+  font-size: 1rem;
+}
+
+#project-img {
+  /*max-width: 60%;*/
+  width: 550px;
+  height: 550px;
+}
+
 /* =====================================================================================  
    Radio
    ===================================================================================== */
@@ -225,90 +228,28 @@ section {
   background: #e7e1d3;
 }
 
-#radio-cont {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 #radio-current-shows {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 2;
-  gap: 5px 5px;
+  gap: 15px 15px;
   width: 60%;
   margin: 0 auto 3rem;
 }
 
 #radio-current-shows img {
-  width: 100%;
-}
-
-#current-show-img-1,
-#current-show-img-2,
-#current-show-img-3,
-#current-show-img-4 {
-  max-width: 10%;
-  filter: grayscale(100%);
-}
-
-#radio-current-shows p {
-  font-size: 1rem;
-}
-
-#radio-btn {
-  background: transparent;
-  color: #000;
-  border: 0;
-  font-size: 3.5rem;
-}
-
-/*
-   Archive
-   ===================================================================================== */
-
-#archive {
-  background-color: #e7e1d3;
-}
-
-.archive-cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-}
-
-#archive-image {
-  margin: 150px 0;
-}
-
-.archive-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  gap: 20px 20px;
-  width: 70%;
-  margin: 1rem auto 0;
-}
-
-.archive-grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 10px 10px;
-  width: 50%;
-  margin: 1rem auto 0;
-}
-
-.archive-grid img {
   max-width: 100%;
-  filter: grayscale(100%);
 }
 
-img:hover {
-  filter: none;
+.radio-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
+
+/*   
+   Radio - individual show page
+   ===================================================================================== */
 
 /* =====================================================================================  
    Info
@@ -318,42 +259,25 @@ img:hover {
   background: #faf8f8;
 }
 
-.section-left-panel-info {
-  width: 100%;
-  height: 100%;
+#info-container-grid {
+  display: flex;
 }
 
 #info-left {
+  margin-right: 6rem;
   width: 35%;
-  margin-right: 100px;
 }
 
 #info-right {
-  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-#info-container-grid {
-  display: flex;
-  flex-direction: row;
+  width: 35%;
 }
 
 .social-logo {
-  color: #000;
-  margin-right: 3em;
-  margin-top: 3rem;
   font-size: 2.5rem;
-}
-
-#mailing-list {
-  grid-area: form;
-  justify-self: start;
-  align-self: start;
-  align-items: start;
-  /*margin: 0 0 3rem;*/
-  width: 100%;
+  margin: 3rem 5rem 0 0;
 }
 
 #mailing-list label,
@@ -364,45 +288,21 @@ img:hover {
 }
 
 #mailing-list input {
-  border: 0;
-  border-color: #000;
-  padding: 4px;
-  margin-right: 10px;
   background-color: transparent;
+  border: none;
   font-size: 1em;
+  padding: 4px;
   width: 40%;
 }
 
 #mailing-list button {
-  padding: 4px;
-  font-family: "Roboto", sans-serif;
-  font-size: 1em;
   background-color: transparent;
   border: 0;
+  font-size: 1em;
+  padding: 4px;
 }
 
 #mailing-list button:hover {
   background-color: #000;
   color: white;
-}
-
-/* =====================================================================================  
-   Radio  Archive - text
-   ===================================================================================== */
-
-#archive-text {
-  width: 50%;
-  margin: 5rem auto 0;
-}
-
-.archive-grid-text {
-  display: grid;
-  grid-template-columns: 15% 40% 25% 7% 13%;
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  gap: 12px 0px;
-  overflow: auto;
-  height: 57%;
-  font-size: 0.8em;
-  margin: 4rem 0 0;
 }
