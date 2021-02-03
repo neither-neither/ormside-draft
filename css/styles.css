@@ -138,47 +138,73 @@ a:hover {
 
 #site-header {
   display: flex;
+  min-height: 100vh;
 }
 
 .section-cont {
   /* display: flex;*/
-  min-height: 100vh;
 }
 
 .section-inner-cont {
   display: flex;
   margin: 0 auto;
-  /*padding: 3rem 0;*/
   width: 90%;
   min-height: 100vh;
 }
 
+.section-sub-inner-cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+/*
 .section-inner-cont-showpage {
   display: flex;
   margin: 0 auto;
-  padding: 5rem 0;
   width: 90%;
-  min-height: 80vh;
+  min-height: 100vh;
+}
+/*
+/*
+.section-left-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+*/
+
+/*
+#radio .section-left-panel {
+  width: 45%;
+}
+*/
+
+/* =====================================================================================  
+   Section Grid
+   ===================================================================================== */
+
+.section-panel-cont {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+}
+
+.section-panel-cont-artist {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+  margin: 4rem 0 0;
 }
 
 .section-left-panel {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 40%;
-  padding: 3rem 0;
-}
-
-#radio .section-left-panel {
-  width: 45%;
-}
-
-.section-right-panel {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 60%;
 }
 
 .section-right-panel-showpage {
@@ -186,12 +212,14 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 60%;
+  padding: 5rem 0;
 }
 
 .section-left-panel-showpage {
   display: flex;
   flex-direction: column;
   width: 40%;
+  padding: 5rem 0;
 }
 
 .section-header {
@@ -229,6 +257,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 80%;
 }
 
 .section-link {
@@ -266,8 +295,8 @@ a:hover {
   grid-template-columns: 50% 50%;
   grid-template-rows: 2;
   gap: 15px 15px;
-  width: 60%;
-  margin: 0 auto 3rem;
+  width: 70%;
+  margin: 0;
 }
 
 #radio-current-shows img {
@@ -289,22 +318,25 @@ a:hover {
 }
 
 #info-container-grid {
-  display: flex;
+  background-color: green;
 }
 
-#info-left {
-  margin-right: 6rem;
-  width: 40%;
+#section-left-cont {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  background-color: pink;
 }
 
-#info-right {
+#section-right-cont {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 35%;
+  width: 50%;
+
+  background-color: lightseagreen;
 }
 
 /*
@@ -354,4 +386,5 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 2rem;
 }
