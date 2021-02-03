@@ -51,6 +51,10 @@ a:hover {
   opacity: 0.5;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* =====================================================================================  
    Header - styles for the main header section of the home page
    ===================================================================================== */
@@ -132,6 +136,10 @@ a:hover {
   opacity: 0.6;
 }
 
+.project-nav {
+  font-size: 2rem;
+}
+
 /* =====================================================================================  
    Sections - styles for the sections on the home page
    ===================================================================================== */
@@ -141,9 +149,11 @@ a:hover {
   min-height: 100vh;
 }
 
+/*
 .section-cont {
-  /* display: flex;*/
+  display: flex;
 }
+*/
 
 .section-inner-cont {
   display: flex;
@@ -249,7 +259,7 @@ a:hover {
   height: 30px;
 }
 
-#section-text-header {
+.section-text-header {
   margin-bottom: 2rem;
 }
 
@@ -257,7 +267,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 80%;
+  width: 90%;
 }
 
 .section-link {
@@ -339,6 +349,16 @@ a:hover {
   background-color: lightseagreen;
 }
 
+#address {
+  width: fit-content;
+}
+
+#address:hover {
+  background-color: #000;
+  color: #fff;
+  opacity: 1;
+}
+
 /*
 #social {
   margin-top: 3rem;
@@ -350,11 +370,15 @@ a:hover {
   margin: 0 5rem 0 0;
 }
 
-#mailing-list label,
-#email {
-  /* font-size: 1.5rem;*/
+#mailing-list label {
   font-weight: bold;
   text-decoration: none;
+}
+
+#email {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 #mailing-list input {
@@ -387,4 +411,16 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 2rem;
+}
+
+.section-text-info a {
+  text-decoration: none;
+
+  font-weight: lighter;
+}
+
+.section-text-info a:hover {
+  color: white;
+  background-color: black;
+  opacity: 1;
 }
