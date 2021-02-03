@@ -153,6 +153,14 @@ a:hover {
   min-height: 100vh;
 }
 
+.section-inner-cont-showpage {
+  display: flex;
+  margin: 0 auto;
+  padding: 5rem 0;
+  width: 90%;
+  min-height: 80vh;
+}
+
 .section-left-panel {
   display: flex;
   flex-direction: column;
@@ -165,18 +173,25 @@ a:hover {
   width: 45%;
 }
 
-.section-left-panel-2 {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-}
-
 .section-right-panel {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 60%;
+}
+
+.section-right-panel-showpage {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.section-left-panel-showpage {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
 
 .section-header {
