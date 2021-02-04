@@ -1,0 +1,74 @@
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  #site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 30px;
+  }
+
+  #nav-bar a {
+    margin: 0.25rem 0;
+  }
+
+  .section-inner-cont {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .home-link {
+    padding: 0;
+    height: 40px;
+
+    display: none;
+  }
+
+  .section-panel-cont {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  .section-panel-cont-artist {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+  }
+
+  .section-left-panel {
+    order: 2;
+  }
+
+  .section-right-panel {
+    order: 1;
+  }
+
+  .section-text {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  #project-img {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  #radio-current-shows {
+    gap: 5px 5px;
+    width: 100%;
+    margin: 0 0 1.5rem;
+  }
+
+  #email,
+  #mailing-list {
+    margin-bottom: 2rem;
+  }
+}

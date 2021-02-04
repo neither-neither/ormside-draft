@@ -19,7 +19,7 @@ const projects = [
     title: "Lisa Lashes",
     date: "April 3rd 2021",
     time: "10pm > 11pm Live",
-    image: "images/lisa.jpeg",
+    image: "images/lisa.jpg",
     text: `Lisa Lashes first emerged as a DJ in 1992 then later in 1995, she had organised to perform at a friend's boat party on the River Severn. It was here the agreement to meet up with Sundissential promoter Paul Madan or 'Madders' she got offered the second official advertisement to continue residency at the Sunday club in Birmingham.[3] Tidy Boys needed Lisa Lashes to help steal Tidy Trax by fronting the relaunch studio project's "The Tidy Girls EP" alongside Rachel Auburn, Lisa Pin-Up and Anne Savage. Her single release, "Unbelievable" (2000) spent one week at No. 63 in the UK Singles Chart in July that year. In October 2003, "What Can You Do 4 Me?" peaked at number 52 in the same chart`,
     link: "paul-purgas.html",
   },
@@ -28,7 +28,7 @@ const projects = [
     image: "images/tony.png",
     date: "May 19th 2021",
     time: "6am > 5pm Live",
-    image: "images/tony.png",
+    image: "images/tony.jpg",
     text: `Tony de Vit began DJing at the age of 17, as a wedding DJ in 1976 playing at local pubs in his home town of Kidderminster, followed in his early 20s, by his first residency at the 'Nightingale' in Birmingham on a Monday night where he played pop and Hi-NRG. He would often have to sweep floors and empty ashtrays after the club had closed.[15] In a relatively short space of time de Vit, through his talent and the diversity of his music, helped establish the 'Nightingale' as a respected club. During the early 1980s, he worked at Wolverhampton's Beacon Radio, playing club tracks during a regular late-night slot on the 1922 show hosted by Mike Baker of Smooth FM).`,
     link: "paul-purgas.html",
   },
@@ -77,7 +77,7 @@ projectNavLeft.addEventListener("click", () => {
   projectText.innerText = projects[i].text;
 });
 
-// Radio Button
+/* Radio Button
 
 const audio1 = document.querySelector("#audio1");
 const radioBtn = document.querySelector("#radio-btn");
@@ -99,3 +99,4 @@ radioBtn.addEventListener("click", () => {
     console.log(radioBtn.value);
   }
 });
+*/
