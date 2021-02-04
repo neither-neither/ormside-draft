@@ -217,7 +217,7 @@ a:hover {
    ===================================================================================== */
 
 #projects {
-  background: #bbc1bc;
+  background-color: #bbc1bc;
 }
 
 #project-time {
@@ -233,7 +233,7 @@ a:hover {
    ===================================================================================== */
 
 #radio {
-  background: #e7e1d3;
+  background-color: #e7e1d3;
 }
 
 #radio-current-shows {
@@ -254,7 +254,7 @@ a:hover {
    ===================================================================================== */
 
 #info {
-  background: #faf8f8;
+  background-color: #faf8f8;
 }
 
 #address:hover {

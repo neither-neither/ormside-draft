@@ -1,8 +1,4 @@
 @media only screen and (max-width: 768px) {
-  body {
-    width: 100%;
-  }
-
   h1 {
     font-size: 5rem;
   }
@@ -11,36 +7,60 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 0;
+
+    margin: 0 0 0 1rem;
   }
 
   #nav-bar a {
     margin: 0.25rem 0;
+    padding: 0;
   }
 
   .section-inner-cont {
-    padding: 0 20px;
+    padding: 0;
     width: 100%;
+    /*border: 1px solid blue;*/
+  }
+
+  .section-sub-inner-cont {
+    width: 100%;
+
+    /*border: 1px solid green;*/
   }
 
   .home-link {
     padding: 0;
     height: 40px;
-
     display: none;
+  }
+
+  .play-link p {
+    margin-left: 0.5rem;
+  }
+
+  #section-nav {
+    padding-left: 0.5rem;
+  }
+
+  .section-nav-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
   }
 
   .section-panel-cont {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    margin-left: 1rem;
   }
 
   .section-panel-cont-artist {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    margin: 0;
+    margin: 0 0 0 1rem;
   }
 
   .section-left-panel {
@@ -49,26 +69,36 @@
 
   .section-right-panel {
     order: 1;
+    align-items: flex-start;
+  }
+
+  .section-header {
+    margin-left: 1rem;
   }
 
   .section-text {
-    width: 100%;
+    width: 90%;
     margin-bottom: 1rem;
   }
 
   #project-img {
-    max-width: 100%;
+    max-width: 90%;
     margin-bottom: 1.5rem;
   }
 
   #radio-current-shows {
     gap: 5px 5px;
-    width: 100%;
+    width: 90%;
     margin: 0 0 1.5rem;
   }
 
   #email,
   #mailing-list {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .social-logo {
+    font-size: 2rem;
+    margin: 0 2rem 0 0;
   }
 }
