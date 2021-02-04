@@ -15,10 +15,8 @@ h1 {
 }
 
 h2 {
-  color: #000;
   font-size: 4rem;
   margin: 0;
-  text-align: left;
 }
 
 h3 {
@@ -61,7 +59,9 @@ a:hover {
 
 #site-header {
   align-items: center;
+  display: flex;
   margin: 0 auto;
+  min-height: 100vh;
   width: 90%;
 }
 
@@ -89,28 +89,15 @@ a:hover {
   opacity: 1;
 }
 
-.home-btn {
-  padding: 12px;
+.home-link {
+  padding: 10px;
   position: fixed;
   right: 0;
   height: 70px;
 }
 
-.back-btn {
-  background: transparent;
-  border: none;
-  bottom: 0;
-  font-size: 1.5rem;
-  padding: 12px;
-  position: fixed;
-  left: 0;
-}
-
-.fa-angle-left {
-  margin-right: 5px;
-}
-
-.archive-link {
+.archive-link,
+.back-link {
   align-items: center;
   display: flex;
   font-size: 2rem;
@@ -126,6 +113,7 @@ a:hover {
 }
 
 .archive-link p,
+.back-link p,
 .play-link p {
   font-size: 1rem;
   font-weight: bold;
@@ -136,78 +124,62 @@ a:hover {
   opacity: 0.6;
 }
 
-.project-nav {
+#section-nav {
+  align-items: center;
+  display: flex;
+  padding-left: 1rem;
+}
+
+.section-nav-btn {
+  background-color: transparent;
+  border: none;
   font-size: 2rem;
+}
+
+.section-nav-btn:hover {
+  opacity: 0.6;
+}
+
+#project-nav-btn-right,
+#project-nav-btn-left,
+#radio-play-btn {
+  padding: 0 0.5rem;
+  height: 30px;
 }
 
 /* =====================================================================================  
    Sections - styles for the sections on the home page
    ===================================================================================== */
 
-#site-header {
-  display: flex;
-  min-height: 100vh;
-}
-
-/*
 .section-cont {
   display: flex;
 }
-*/
 
 .section-inner-cont {
-  display: flex;
   margin: 0 auto;
-  width: 90%;
   min-height: 100vh;
+  width: 90%;
 }
 
 .section-sub-inner-cont {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   padding: 3rem 0;
+  height: 75%;
 }
-
-/*
-.section-inner-cont-showpage {
-  display: flex;
-  margin: 0 auto;
-  width: 90%;
-  min-height: 100vh;
-}
-/*
-/*
-.section-left-panel {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 40%;
-}
-*/
-
-/*
-#radio .section-left-panel {
-  width: 45%;
-}
-*/
 
 /* =====================================================================================  
    Section Grid
    ===================================================================================== */
 
 .section-panel-cont {
-  width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 100%;
+  min-height: 100%;
 }
 
 .section-panel-cont-artist {
-  width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 100%;
+  min-height: 100%;
   margin: 4rem 0 0;
 }
 
@@ -217,19 +189,10 @@ a:hover {
   justify-content: space-between;
 }
 
-.section-right-panel-showpage {
+.section-right-panel {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 60%;
-  padding: 5rem 0;
-}
-
-.section-left-panel-showpage {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  padding: 5rem 0;
 }
 
 .section-header {
@@ -237,43 +200,16 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-#section-nav {
-  align-items: center;
-  display: flex;
-  padding-left: 1rem;
-}
-
-.project-nav,
-#play-btn {
-  background-color: transparent;
-  border: none;
-}
-
-.project-nav:hover {
-  opacity: 0.6;
-}
-
-#project-nav-btn-right,
-#project-nav-btn-left {
-  padding: 0 0.5rem;
-  height: 30px;
+.section-text {
+  width: 90%;
 }
 
 .section-text-header {
   margin-bottom: 2rem;
 }
 
-.section-text {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 90%;
-}
-
 .section-link {
-  font-weight: bold;
   font-size: 0.8rem;
-  text-decoration: none;
 }
 
 /* =====================================================================================  
@@ -313,12 +249,6 @@ a:hover {
   max-width: 100%;
 }
 
-.radio-btn {
-  background: transparent;
-  border: 0;
-  padding: 0;
-}
-
 /* =====================================================================================  
    Info
    ===================================================================================== */
@@ -327,47 +257,24 @@ a:hover {
   background: #faf8f8;
 }
 
-#info-container-grid {
-  background-color: green;
-}
-
-#section-left-cont {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  background-color: pink;
-}
-
-#section-right-cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 50%;
-
-  background-color: lightseagreen;
-}
-
-#address {
-  width: fit-content;
-}
-
 #address:hover {
   background-color: #000;
   color: #fff;
   opacity: 1;
+  width: fit-content;
 }
 
-/*
-#social {
-  margin-top: 3rem;
+#connections {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 25%;
 }
-*/
 
-.social-logo {
-  font-size: 2rem;
-  margin: 0 5rem 0 0;
+#email {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 #mailing-list label {
@@ -375,29 +282,23 @@ a:hover {
   text-decoration: none;
 }
 
-#email {
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
 #mailing-list input {
   background-color: transparent;
-  font-size: 0.9rem;
-  padding: 4px;
-  width: 40%;
-  outline: 0;
-  border-width: 0 0 2px;
+  border-width: 0 0 1px;
   border-color: #000;
   font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 0.9rem;
+  outline: 0;
+  padding: 4px;
+  width: 40%;
 }
 
 #mailing-list button {
   background-color: transparent;
   border: 0;
-  padding: 4px;
   font-size: 0.9rem;
   font-family: "Helvetica", "Arial", sans-serif;
+  padding: 4px;
 }
 
 #mailing-list button:hover {
@@ -405,22 +306,18 @@ a:hover {
   color: white;
 }
 
-#info-div-extra {
-  min-height: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 2rem;
-}
-
-.section-text-info a {
-  text-decoration: none;
-
+#info .section-text a {
   font-weight: lighter;
+  text-decoration: none;
 }
 
-.section-text-info a:hover {
+#info .section-text a:hover {
   color: white;
   background-color: black;
   opacity: 1;
+}
+
+.social-logo {
+  font-size: 2rem;
+  margin: 0 5rem 0 0;
 }
