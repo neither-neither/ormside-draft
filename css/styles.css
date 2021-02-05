@@ -291,12 +291,12 @@ a:hover {
   text-decoration: none;
 }
 
-#mailing-list label {
+.mailing-list label {
   font-weight: bold;
   text-decoration: none;
 }
 
-#mailing-list input {
+.mailing-list input {
   background-color: transparent;
   border-width: 0 0 1px;
   border-color: #000;
@@ -307,7 +307,7 @@ a:hover {
   width: 40%;
 }
 
-#mailing-list button {
+.mailing-list button {
   background-color: transparent;
   border: 0;
   font-size: 0.9rem;
@@ -315,7 +315,7 @@ a:hover {
   padding: 4px;
 }
 
-#mailing-list button:hover {
+.mailing-list button:hover {
   background-color: #000;
   color: white;
 }
