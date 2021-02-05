@@ -1,6 +1,8 @@
 html {
   font-family: "Helvetica", "Arial", sans-serif;
   scroll-behavior: smooth;
+  overflow: hidden;
+  height: 100vh;
 }
 
 body {
@@ -140,8 +142,8 @@ a:hover {
   opacity: 0.6;
 }
 
-#project-nav-btn-right,
-#project-nav-btn-left,
+#chevron-right,
+#chevron-left,
 #radio-play-btn {
   padding: 0 0.5rem;
   height: 30px;
@@ -151,8 +153,16 @@ a:hover {
    Sections - styles for the sections on the home page
    ===================================================================================== */
 
+#all-sections-container {
+  overflow: scroll;
+  scroll-snap-type: y proximity;
+  height: 100vh;
+}
+
 .section-cont {
   display: flex;
+  scroll-snap-align: start;
+  scroll-padding: 10px;
 }
 
 .section-inner-cont {
@@ -234,6 +244,10 @@ a:hover {
 
 #radio {
   background-color: #e7e1d3;
+}
+
+#radio .section-text p {
+  margin: 1rem 0;
 }
 
 #radio-current-shows {

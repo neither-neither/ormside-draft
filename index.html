@@ -22,6 +22,7 @@
     <script src="js/javascript.js" async></script>
   </head>
   <body>
+    <div id="all-sections-container">
     <nav>
     <a href="#site-header">
       <img class="home-link" src="images/orm-logo-3.png" alt="" />
@@ -46,10 +47,10 @@
               <h2>Projects</h2>
               <nav id="section-nav">
                 <button class="section-nav-btn">
-                  <i class="fas fa-chevron-left" id="project-nav-btn-left"></i>
+                  <i class="fas fa-chevron-left" id="chevron-left"></i>
                 </button>
                 <button class="section-nav-btn">
-                  <i class="fas fa-chevron-right" id="project-nav-btn-right"></i>
+                  <i class="fas fa-chevron-right" id="chevron-right"></i>
                 </button>
               </nav>
             </header>
@@ -65,12 +66,12 @@
                     </h3>
                   </header>
                   <article class="section-text">
-                    <p id="project-text"></p>
-                    <br />
-                    <br />
-                    <a id="project-link" class="section-link" href=""
-                      >Read more...</a
+                    <a id="project-link" class="section-link" href="" target="_blank"
+                      ></a
                     >
+                    <br />
+                    <br />
+                    <p id="project-text"></p>
                   </article>
                 </section>
                 <nav>
@@ -119,7 +120,7 @@
                   </header>
                   <article class="section-text">
                     <p>
-                      <a href="radio-shows/meg-woof-new.html"
+                      <a href="radio-shows/meg-woof.html"
                         >> Note Resolve - Meg Woof</a
                       >
                       <br>
@@ -131,9 +132,8 @@
                       released into the world in the face of intense new challenges
                       and restrictions.
                     </p>
-                    <br />
                     <p>
-                      <a href="radio-shows/smallboydanger-new.html"
+                      <a href="radio-shows/smallboydanger.html"
                         >> Jumpup4jah-3 - Smallboydanger</a
                       >
                       <br>
@@ -146,10 +146,8 @@
                       in forms of mythmaking between historic and contemporary image
                       discourse.
                     </p>
-                    <br />
-                    
                     <p>
-                      <a href="radio-shows/jim-janco-new.html"
+                      <a href="radio-shows/jim-janco.html"
                         >> Landlocked: music from and related to the films of Black
                         Audio Film Collective - Jim&nbsp;Janco</a
                       >
@@ -160,10 +158,8 @@
                       London. He runs the People Drift nights at Ormside and Venue
                       MOT.
                     </p>
-                    <br />
-                 
                     <p>
-                      <a href="radio-shows/bradford-bailey-new.html"
+                      <a href="radio-shows/bradford-bailey.html"
                         >> Bradford Bailey - The Hum</a
                       >
                       <br>
@@ -176,12 +172,11 @@
                       is also the writer of The Hum, a blog dedicated to supporting
                       historic and contemporary music which exists beyond the realms
                       of mainstream interest.
-                      
                     </p>
                   </article>
                 </section>
                 <nav>
-                  <a class="archive-link" href="#radio"
+                  <a class="archive-link" href="https://www.mixcloud.com/ormsideprojects/" target="_blank"
                     ><i class="fas fa-folder"></i>
                     <p>Archive</p></a
                   >
@@ -239,48 +234,61 @@
                     </p>
                     <br />
                     <p>
-                      
-                      <span class="bold">People / Links ></span> Mike&nbsp;Leviitt, Jess&nbsp;Boyal, Alina
-                      Astrova, <a href="https://5gatetemple.bandcamp.com/" target="_blank" rel="noopener noreferrer">5&nbsp;Gate&nbsp;Temple</a>, 
-                      <a href="https://www.instagram.com/f_hyperlocal/?hl=en target="_blank" rel="noopener noreferrer">Hyperlocal</a>, Charlie&nbsp;Hope,
-                      <a href="https://www.tate.org.uk/whats-on/tate-modern/performance/nkisi-spiral" target="_blank" rel="noopener noreferrer">NKISI</a>,
+                      <span class="bold">People / Links ></span> Mike&nbsp;Levitt, Jess&nbsp;Boyal, Alina&nbsp;Astrova, 
+                      <a href="https://5gatetemple.bandcamp.com/" target="_blank" rel="noopener noreferrer">5&nbsp;Gate&nbsp;Temple</a>, 
+                      <a href="https://www.instagram.com/f_hyperlocal/?hl=en target="_blank" rel="noopener noreferrer">Hyperlocal</a>, 
+                      <a href="https://www.tate.org.uk/whats-on/tate-modern/performance/nkisi-spiral" target="_blank" rel="noopener noreferrer">Charlie&nbsp;Hope</a>,
+                      <a href="https://ra.co/podcast/660" target="_blank" rel="noopener noreferrer">NKISI</a>,
                       <a href="https://www.aqnb.com/2020/07/21/curtly-thomas/" target="_blank" rel="noopener noreferrer">Curtly&nbsp;Thomas</a>, 
-                      <a href="https://www.facebook.com/clubcouturexxx-537368339719735" target="_blank" rel="noopener noreferrer">clubcouture</a>, Anita, Freya, 
+                      <a href="https://www.facebook.com/clubcouturexxx-537368339719735" target="_blank" rel="noopener noreferrer">clubcouture</a>, 
+                      Anita, Freya, 
                       <a href="https://www.facebook.com/nosymblos/" target="_blank" rel="noopener noreferrer">No&nbsp;Symbols</a>, 
                       <a href="https://www.youtube.com/watch?v=EuU1LNGSro4" target="_blank" rel="noopener noreferrer">BALA CLUB</a>,
                       <a href="https://www.facebook.com/peopledrift/" target="_blank" rel="noopener noreferrer">People&nbsp;Drift</a>,
-                      Jim&nbsp;Janco, Sev, USB&nbsp;Sound&nbsp;Check,
+                      <a href="https://soundcloud.com/jim-janco" target="_blank" rel="noopener noreferrer">Jim&nbsp;Janco</a>, 
+                      <a href="https://soundcloud.com/severineyveline" target="_blank" rel="noopener noreferrer">Sev</a>, 
+                      Sound&nbsp;Check&nbsp;USB,
                       <a href="https://lolina.bandcamp.com/" target="_blank" rel="noopener noreferrer">LOLINA</a>,
                       <a href="https://soundcloud.com/ajpain" target="_blank" rel="noopener noreferrer">AJ&nbsp;Pain</a>,
                       <a href="http://www.susularoche.com/" target="_blank" rel="noopener noreferrer">Susu&nbsp;Laroche</a>,
-                      OHXY, 
+                      <a href="https://soundcloud.com/oxhy" target="_blank" rel="noopener noreferrer">OHXY</a>, 
                       <a href="https://www.facebook.com/venueM.O.T/" target="_blank" rel="noopener noreferrer">Venue&nbsp;MOT</a>,
                       <a href="https://diyspaceforlondon.org/" target="_blank" rel="noopener noreferrer">DIY&nbsp;Space&nbsp;For&nbsp;London</a>,
                       <a href="https://www.facebook.com/amgineacoustic" target="_blank" rel="noopener noreferrer">Amgine&nbsp;Acoustic</a>,
-                      FARA&nbsp;FARA, Covco, Suutoo, RE:LAX, Shannon&nbsp;SP, mellowdramatics, 
+                      FARA&nbsp;FARA, 
+                      <a href="https://soundcloud.com/covco" target="_blank" rel="noopener noreferrer">Covco</a>,
+                      <a href="https://soundcloud.com/suutoo" target="_blank" rel="noopener noreferrer">Suutoo</a>, 
+                      <a href="https://www.nts.live/shows/relax-w-reni" target="_blank" rel="noopener noreferrer">RE:LAX</a>, 
+                      <a href="https://soundcloud.com/shannensp" target="_blank" rel="noopener noreferrer">Shannon&nbsp;SP</a>, 
+                      <a href="https://soundcloud.com/mellowdramatics94" target="_blank" rel="noopener noreferrer">mellowdramatics</a>, 
                       <a href="https://crisisfarm.blogspot.com/" target="_blank" rel="noopener noreferrer">CRISIS&nbsp;FARM</a>,
-                      John&nbsp;Rust, Joy&nbsp;O, 
+                      <a href="https://www.nts.live/shows/mobbs" target="_blank" rel="noopener noreferrer">Mobbs</a>, 
+                      <a href="https://twitter.com/jonrust?lang=en" target="_blank" rel="noopener noreferrer">John&nbsp;Rust</a>, 
+                      <a href="https://ra.co/events/1121686" target="_blank" rel="noopener noreferrer">Joy&nbsp;O</a>, 
                       <a href="https://lordtusk.bandcamp.com/" target="_blank" rel="noopener noreferrer">Lord&nbsp;Tusk</a>,
                       NRG, 
                       <a href="https://aircode.bandcamp.com/" target="_blank" rel="noopener noreferrer">Aircode</a>,
-                      ewe, Jlte, Jupiter&nbsp;Woods, Peak&nbsp;London, 
+                      <a href="https://www.nts.live/shows/lawsonbenn" target="_blank" rel="noopener noreferrer">Public Order</a>,
+                      <a href="https://soundcloud.com/jlte" target="_blank" rel="noopener noreferrer">Jlte</a>, 
+                      <a href="https://jupiterwoods.com/" target="_blank" rel="noopener noreferrer">Jupiter&nbsp;Woods</a>,
+                      <a href="https://www.peak-art.org/" target="_blank" rel="noopener noreferrer">Peak&nbsp;London</a>,
                       <a href="https://soundcloud.com/acolytesloc" target="_blank" rel="noopener noreferrer">ACOLYTES</a>,
-                      <a href="https://www.mixcloud.com/acolderconsciousness/stream/" target="_blank" rel="noopener noreferrer">A&nbsp;Colder&nbsp;Consciousness</a>,
                       <a href="http://newnoveta.blogspot.com/" target="_blank" rel="noopener noreferrer">New&nbsp;Noveta</a>,
-                      Paul&nbsp;Purgas, 
+                      <a href="https://paulpurgas.com/" target="_blank" rel="noopener noreferrer">Paul&nbsp;Purgas</a>, 
                       <a href="https://www.aqnb.com/2016/07/13/opening-party-fuck-what-they-think-penarth-centre-jul-15/" target="_blank" rel="noopener noreferrer">@Gaybar</a>,
-                      Body&nbsp;Motion, Soaking,
+                      <a href="https://www.nts.live/shows/body-motion" target="_blank" rel="noopener noreferrer">Body&nbsp;Motion</a>,
+                      Soaking,
                       <a href="http://www.haunterrecords.com/intro" target="_blank" rel="noopener noreferrer">Haunter&nbsp;Records</a>,
                       <a href="https://www.instagram.com/blackobsidian_soundsystem/" target="_blank" rel="noopener noreferrer">B.O.S.S.</a>,
-                      NTS,
+                      <a href="https://www.nts.live/" target="_blank" rel="noopener noreferrer">NTS</a>,
                       <a href="https://www.instagram.com/noxiouscrush/" target="_blank" rel="noopener noreferrer">noxiouscrush</a>,
                       <a href="https://www.instagram.com/awwwwaoffxe/" target="_blank" rel="noopener noreferrer">awwwwa</a>,
-                      Klein,
+                      <a href="https://www.mixcloud.com/sunflowerfmfm/20180821-2224-kline/" target="_blank" rel="noopener noreferrer">Klein</a>,
                       <a href="https://xenogothic.com/2019/01/11/for-k-punk-2019/" target="_blank" rel="noopener noreferrer">For&nbsp;K-Punk</a>,
-                      Unit 21, Winner,
+                      Unit 21, Winner, Cool&nbsp;Ice&nbsp;Man,
                       <a href="https://www.mixcloud.com/sunflowerfmfm/" target="_blank" rel="noopener noreferrer">Sunflower&nbsp;FM</a>
+                      <a href="https://www.mixcloud.com/acolderconsciousness/stream/" target="_blank" rel="noopener noreferrer">A&nbsp;Colder&nbsp;Consciousness</a>
                     </p>
-                  
                     <br />
                     <p>
                       <span class="bold">Commercial ></span> The space is also designed for photo &
@@ -295,15 +303,19 @@
                   <a id="email" href="mailto:contact@ormside.co.uk"
                   >contact@ormside.co.uk</a
                 >
-                  <form id="mailing-list">
+                  <form id="mailing-list" 
+                  action="https://ormiside.us7.list-manage.com/subscribe/post" 
+                  method="POST">
                   <label for="">Mailing List</label>
+                  <input type="hidden" name="u" value="8076ef518d4899e2a55b83370">
+                  <input type="hidden" name="id" value="f6c70865fe">
                   <input
                   type="email"
-                  name=""
+                  name="MERGE0"
                   id=""
                   placeholder="email address"
                 />
-                  <button>Subscribe</button>
+                  <button type="submit">Subscribe</button>
                   </form>
                   <div id="social">
                 <a
@@ -326,5 +338,6 @@
         </div>
       </section>
     </main>
+  </div>
   </body>
 </html>
