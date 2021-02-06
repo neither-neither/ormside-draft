@@ -40,8 +40,8 @@
     padding-left: 0.5rem;
   }
 
-  #project-nav-btn-right,
-  #project-nav-btn-left {
+  .fa-chevron-right,
+  .fa-chevron-left {
     padding: 0;
   }
 
