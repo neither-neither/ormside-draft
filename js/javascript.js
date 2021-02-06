@@ -10,9 +10,9 @@ const projects = [
     linkAddress: "https://www.facebook.com/events/2873655309545556",
     text: `Romika invites you to watch TV all afternoon into night on 14th February. 
     
-           Indoors, alone, to celebrate the mystery, tragedy and glamour of love.
+          Indoors, alone, to celebrate the mystery, tragedy and glamour of love.
            
-           International, internationalist, broadcasting from Ormside to the cosmos. Join us on Romika TV 🌹
+          International, internationalist, broadcasting from Ormside to the cosmos. Join us on Romika TV 🌹
 
           With DJs: Nikola Vitković, Vedma, Devica/ACC (Palermo), Candy Sez, Katie Shannon ( DJ/LIVE), Somnambulist
 
