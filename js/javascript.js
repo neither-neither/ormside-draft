@@ -26,7 +26,7 @@ const projects = [
     title: "Judge Jules",
     date: "March 12th 2021",
     time: "7pm > 3am Live",
-    image: "images/radio/bradford-bailey-800.jpg",
+    image: "../images/radio/bradford-bailey-800.jpg",
     link: "",
     text: `He’s one DJ that has been there, done it, and done it all again. For almost three decades Judge Jules has led the way in the world of dance music. Since kicking off his career behind the decks in 1987, Judge Jules has ticked every box, as a DJ, producer, promoter, A&R, radio presenter, taste-maker and, more recently, a music specialist lawyer. Widley recognised for influencing an entire generation with residencies on both Kiss FM and BBC Radio 1, to this day the Judge continues to be on the playlists of millions with his weekly radio show The Global Warm Up, which notches up 750,000 downloads every week via his podcast and is broadcast on over 80 stations around the world.`,
   },
