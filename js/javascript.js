@@ -5,7 +5,7 @@ const projects = [
     title: "Romika TV: Valentines",
     date: "Sunday Feb 14th 2021",
     time: "4pm",
-    image: "../images/projects/romika-valentine.gif",
+    image: "images/projects/romika-valentine.gif",
     linkText: "FB Event",
     linkAddress: "https://www.facebook.com/events/2873655309545556",
     text: `Romika invites you to watch TV all afternoon into night on 14th February. 
