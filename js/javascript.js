@@ -1,3 +1,5 @@
+console.log("loaded");
+
 const projects = [
   {
     title: "Romika TV: Valentines",
@@ -12,7 +14,7 @@ const projects = [
            
           International, internationalist, broadcasting from Ormside to the cosmos. Join us on Romika TV 🌹
 
-          With DJs: Nikola Vitković, Vedma, Devica/ACC (Palermo), Candy Sez, Katie Shannon ( DJ/LIVE), Somnambulist
+          With DJs: Nikola Vitković, Vedma, Devica/ACC (Palermo), Candy Sez, Katie Shannon (DJ/LIVE), Somnambulist
 
           Live sets/performances from: Adam Christensen, CECILIA, Vindicatrix, Sophie Sleigh-Johnson, Clup Alpino (Poland), Franziska Lantz, Sean Colum ( Tokyo), Robert Jack + Federico Lupo, Lucia Udvardyova/Palmovka (Budapest)
 
@@ -48,7 +50,7 @@ projectLink.href = projects[i].linkAddress;
 projectLink.innerText = projects[i].linkText;
 
 // move carousel right
-const projectNavRight = document.querySelector(".fa-chevron-right");
+const projectNavRight = document.querySelector("#right");
 projectNavRight.addEventListener("click", () => {
   console.log("nav click right");
   i++;
@@ -64,7 +66,7 @@ projectNavRight.addEventListener("click", () => {
 });
 
 // move carousel left
-const projectNavLeft = document.querySelector(".fa-chevron-left");
+const projectNavLeft = document.querySelector("#left");
 projectNavLeft.addEventListener("click", () => {
   console.log("nav click left");
   i--;
