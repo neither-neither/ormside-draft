@@ -1,8 +1,6 @@
 html {
   font-family: "Helvetica", "Arial", sans-serif;
   scroll-behavior: smooth;
-  overflow: hidden;
-  height: 100vh;
 }
 
 body {
@@ -126,7 +124,7 @@ a:hover {
   opacity: 0.6;
 }
 
-#section-nav {
+.section-nav {
   align-items: center;
   display: flex;
   padding-left: 1rem;
@@ -142,8 +140,8 @@ a:hover {
   opacity: 0.6;
 }
 
-#chevron-right,
-#chevron-left,
+.fa-chevron-right,
+.fa-chevron-left,
 #radio-play-btn {
   padding: 0 0.5rem;
   height: 30px;
@@ -153,16 +151,8 @@ a:hover {
    Sections - styles for the sections on the home page
    ===================================================================================== */
 
-#all-sections-container {
-  overflow: scroll;
-  scroll-snap-type: y proximity;
-  height: 100vh;
-}
-
 .section-cont {
   display: flex;
-  scroll-snap-align: start;
-  scroll-padding: 10px;
 }
 
 .section-inner-cont {
@@ -235,7 +225,7 @@ a:hover {
 }
 
 #project-img {
-  max-width: 60%;
+  max-width: 80%;
 }
 
 /* =====================================================================================  
