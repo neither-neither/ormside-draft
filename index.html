@@ -22,16 +22,15 @@
     <script src="js/javascript.js" async></script>
   </head>
   <body>
-    
     <nav>
     <a href="#site-header">
-      <img class="home-link" src="images/logos/orm-logo.png" alt="" />
+      <img class="home-link" src="images/logos/orm-logo.png" alt="" tabindex="1"/>
     </a>
     </nav>
     <!-- Header -->
     <header id="site-header">
       <h1>Ormside</h1>
-      <nav id="nav-bar">
+      <nav id="nav-bar" role="group">
         <a href="#projects">Projects</a>
         <a href="#radio">Radio</a>
         <a href="#info">Info</a>
@@ -45,12 +44,12 @@
             <!-- Section Header -->
             <header class="section-header">
               <h2>Projects</h2>
-              <nav class="section-nav">
+              <nav class="section-nav" role="group">
                 <div id="left">
-                <i class="fas fa-chevron-left section-nav-btn" ></i>
+                <i class="fas fa-chevron-left section-nav-btn" tabindex="0"></i>
               </div>
                 <div id="right">
-                <i class="fas fa-chevron-right section-nav-btn" ></i>
+                <i class="fas fa-chevron-right section-nav-btn" tabindex="0"></i>
               </div>
               </nav>
             </header>
@@ -60,10 +59,10 @@
                 <section class="section-text">
                   <header class="section-text-header">
                     <h3 id="project-title"></h3>
-                    <h3>
+                    <h4>
                       <span id="project-date"></span>
                       <span id="project-time"></span>
-                    </h3>
+                    </h4>
                   </header>
                   <article class="section-text">
                     <a id="project-link" class="section-link" href="" target="_blank"
@@ -74,16 +73,14 @@
                     <p id="project-text"></p>
                   </article>
                 </section>
-                <nav>
                   <a class="archive-link" href="#projects"
                     ><i class="fas fa-folder"></i>
                     <p>Archive</p></a
                   >
-                </nav>
               </div>
               <!--Right Panel-->
               <div class="section-right-panel">
-                <img id="project-img" src="" alt="" />
+                <img id="project-img" src="" alt="current project image" />
               </div>
             </div>
           </div>
@@ -175,33 +172,29 @@
                     </p>
                   </article>
                 </section>
-                <nav>
                   <a class="archive-link" href="https://www.mixcloud.com/ormsideprojects/" target="_blank"
                     ><i class="fas fa-folder"></i>
                     <p>Archive</p></a
                   >
-                </nav>
               </div>
               <!--Right Panel-->
               <div class="section-right-panel">
                 <figure id="radio-current-shows">
                   <img
-                    
                     src="images/radio/meg-woof-800.jpg"
-                    alt=""
+                    alt="meg woof"
                   />
                   <img 
-                  
-                  src="images/radio/jim-janco.jpg" alt="" />
-                  <img
-                  
-                    src="images/radio/jumpup4jah-3-lower.jpg"
-                    alt=""
+                  src="images/radio/jim-janco.jpg" 
+                  alt="jim janco" 
                   />
                   <img
-                  
+                    src="images/radio/jumpup4jah-3-lower.jpg"
+                    alt="jumpup4jah-3"
+                  />
+                  <img
                     src="images/radio/bradford-bailey-800.jpg"
-                    alt=""
+                    alt="bradford bailey"
                   />
                 </figure>
               </div>
@@ -228,7 +221,6 @@
                       Penarth Centre <br />
                       SE15 1TR
                     </h3></a>
-                    
                   </header>
                   <article class="section-text">
                     <p>
@@ -309,7 +301,6 @@
                   <input type="hidden" name="u" value="8076ef518d4899e2a55b83370">
                   <input type="hidden" name="id" value="f6c70865fe">
                   <label for="">Mailing List</label>
-                  
                   <input
                   type="email"
                   name="MERGE0"
@@ -339,6 +330,5 @@
         </div>
       </section>
     </main>
-  
   </body>
 </html>

@@ -1,6 +1,10 @@
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
   }
 
   #site-header {
@@ -14,12 +18,12 @@
   #nav-bar a {
     margin: 0.25rem 0;
     padding: 0;
+    font-size: 2rem;
   }
 
   .section-inner-cont {
     padding: 0;
     width: 100%;
-    /*border: 1px solid blue;*/
   }
 
   .section-sub-inner-cont {
@@ -38,11 +42,6 @@
 
   #section-nav {
     padding-left: 0.5rem;
-  }
-
-  .fa-chevron-right,
-  .fa-chevron-left {
-    padding: 0;
   }
 
   .section-nav-btn {
