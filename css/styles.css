@@ -238,6 +238,7 @@ a:hover {
   background-color: #e7e1d3;
 }
 
+#projects .section-text p,
 #radio .section-text p {
   margin: 1rem 0;
 }

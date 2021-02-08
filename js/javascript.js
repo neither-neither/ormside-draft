@@ -1,5 +1,3 @@
-console.log("loaded");
-
 const projects = [
   {
     title: "Romika TV: Valentines",
@@ -21,14 +19,6 @@ const projects = [
           + more TBC
 
           Twitch link to follow xx`,
-  },
-  {
-    title: "Project Title",
-    date: "Project Date",
-    time: "Project Time",
-    image: "images/radio/meg-woof-800.jpg",
-    link: "",
-    text: `He’s one DJ that has been there, done it, and done it all again. For almost three decades Judge Jules has led the way in the world of dance music. Since kicking off his career behind the decks in 1987, Judge Jules has ticked every box, as a DJ, producer, promoter, A&R, radio presenter, taste-maker and, more recently, a music specialist lawyer. Widley recognised for influencing an entire generation with residencies on both Kiss FM and BBC Radio 1, to this day the Judge continues to be on the playlists of millions with his weekly radio show The Global Warm Up, which notches up 750,000 downloads every week via his podcast and is broadcast on over 80 stations around the world.`,
   },
 ];
 
@@ -52,7 +42,6 @@ projectLink.innerText = projects[i].linkText;
 // move carousel right
 const projectNavRight = document.querySelector("#right");
 projectNavRight.addEventListener("click", () => {
-  console.log("nav click right");
   i++;
   if (i === projects.length) {
     i = 0;
@@ -68,7 +57,6 @@ projectNavRight.addEventListener("click", () => {
 // move carousel left
 const projectNavLeft = document.querySelector("#left");
 projectNavLeft.addEventListener("click", () => {
-  console.log("nav click left");
   i--;
   if (i < 0) {
     i = projects.length - 1;
