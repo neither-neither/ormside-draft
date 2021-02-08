@@ -143,9 +143,10 @@ a:hover {
 
 .fa-chevron-right,
 .fa-chevron-left,
-#radio-play-btn {
+#radio-btn {
   padding: 0 0.5rem;
   height: 30px;
+  outline: none;
 }
 
 /* =====================================================================================  

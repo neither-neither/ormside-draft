@@ -78,27 +78,20 @@ projectNavLeft.addEventListener("click", () => {
   projectText.innerText = projects[i].text;
 });
 
-/* 
 // Radio Button
-
-const audio1 = document.querySelector("#audio1");
+const radio = document.querySelector("#listen");
 const radioBtn = document.querySelector("#radio-btn");
 
 radioBtn.addEventListener("click", () => {
   if (radioBtn.value === "on") {
-    console.log(radioBtn.value);
-    audio1.pause();
+    radio.pause();
     radioBtn.innerHTML =
-      "<i class='fas fa-play radio-logo'></i><p id='radio-btn-text'>Listen Live</p>";
+      "<i class='fas fa-play'></i><p id='radio-btn-text'>Play</p>";
     radioBtn.value = "off";
-    console.log(radioBtn.value);
   } else {
-    console.log(radioBtn.value);
-    audio1.play();
+    radio.play();
     radioBtn.innerHTML =
-      "<i class='fas fa-pause radio-logo'></i><p id='radio-btn-text'>Listen Live</p>";
+      "<i class='fas fa-pause'></i><p id='radio-btn-text'>Pause</p>";
     radioBtn.value = "on";
-    console.log(radioBtn.value);
   }
 });
-*/

@@ -94,13 +94,9 @@
             <header class="section-header">
               <h2>Radio</h2>
               <nav class="section-nav">
-                <button class="section-nav-btn play-link">
-                  <img
-                    id="radio-play-btn"
-                    src="images/logos/play.png"
-                    alt=""
-                  />
-                  <p>Play</p>
+                <button id="radio-btn" class="section-nav-btn play-link">
+                  <i class='fas fa-play'></i>
+                  <p id='radio-btn-text'>Play</p>
                 </button>
               </nav>
             </header>
@@ -330,5 +326,8 @@
         </div>
       </section>
     </main>
+    <audio id="listen">
+      <source src="https://listen.ormside.co.uk/radio/8000/radio.mp3" type="audio/mpeg">
+  </audio>
   </body>
 </html>
