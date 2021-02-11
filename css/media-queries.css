@@ -104,7 +104,12 @@
 
   .social-logo {
     font-size: 2rem;
-    margin: 3rem 2rem 0 0;
+    margin: 3rem 3rem 0 0;
+  }
+
+  #ace-logo {
+    width: 40%;
+    margin-top: 2rem;
   }
 }
 

@@ -279,6 +279,7 @@ a:hover {
   background-color: #000;
   color: #fff;
   opacity: 1;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -328,4 +329,10 @@ a:hover {
 .social-logo {
   font-size: 2rem;
   margin: 0 5rem 0 0;
+}
+
+#ace-logo {
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  width: 20%;
 }

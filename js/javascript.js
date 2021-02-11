@@ -4,8 +4,8 @@ const projects = [
     date: "Sunday Feb 14th 2021",
     time: "4pm",
     image: "images/projects/romika-valentine.gif",
-    linkText: "FB Event",
-    linkAddress: "https://www.facebook.com/events/2873655309545556",
+    link:
+      "<a id='project-link' class='section-link' href='https://www.facebook.com/events/2873655309545556' target='_blank'>Facebook Event</a>",
     text: `Romika invites you to watch TV all afternoon into night on 14th February. 
     
           Indoors, alone, to celebrate the mystery, tragedy and glamour of love.
@@ -14,11 +14,17 @@ const projects = [
 
           With DJs: Nikola Vitković, Vedma, Devica/ACC (Palermo), Candy Sez, Katie Shannon (DJ/LIVE), Somnambulist
 
-          Live sets/performances from: Adam Christensen, CECILIA, Vindicatrix, Sophie Sleigh-Johnson, Clup Alpino (Poland), Franziska Lantz, Sean Colum ( Tokyo), Robert Jack + Federico Lupo, Lucia Udvardyova/Palmovka (Budapest)
+          Live sets/performances from: Adam Christensen, CECILIA, Vindicatrix, Sophie Sleigh-Johnson, Clup Alpino (Poland), Franziska Lantz, Sean Colum ( Tokyo), Robert Jack + Federico Lupo, Lucia Udvardyova/Palmovka (Budapest) + more TBC`,
+  },
+  {
+    title: "Uprising: South London Industrial Map",
+    date: "Spring 2021",
+    time: "",
+    image: "images/projects/paul-purgas.jpg",
+    link: "",
+    text: `Map & audio guide exploring the history of Industrial music in South London during the 1980's, uncovering the network of venues and squats that formed the foundation of the scene in the area, and the music that beat a defiant soundtrack against an era of cultural oppression, economic decline and aggressive corporate political organisation.
 
-          + more TBC
-
-          Twitch link to follow xx`,
+           A research project by Paul Purgas.`,
   },
 ];
 
@@ -27,7 +33,7 @@ const projectDate = document.querySelector("#project-date");
 const projectTime = document.querySelector("#project-time");
 const projectImg = document.querySelector("#project-img");
 const projectText = document.querySelector("#project-text");
-const projectLink = document.querySelector("#project-link");
+const projectLink = document.querySelector("#proj-link");
 
 // sets initial assets of project section to index 0 of projects object
 let i = 0;
@@ -36,8 +42,8 @@ projectDate.innerText = projects[i].date;
 projectTime.innerText = projects[i].time;
 projectImg.src = projects[i].image;
 projectText.innerText = projects[i].text;
-projectLink.href = projects[i].linkAddress;
-projectLink.innerText = projects[i].linkText;
+
+projectLink.innerHTML = projects[i].link;
 
 // move carousel right
 const projectNavRight = document.querySelector("#right");
@@ -51,7 +57,7 @@ projectNavRight.addEventListener("click", () => {
   projectTime.innerText = projects[i].time;
   projectImg.src = projects[i].image;
   projectText.innerText = projects[i].text;
-  projectLink.href = projects[i].link;
+  projectLink.innerHTML = projects[i].link;
 });
 
 // move carousel left
@@ -62,8 +68,11 @@ projectNavLeft.addEventListener("click", () => {
     i = projects.length - 1;
   }
   projectTitle.innerText = projects[i].title;
+  projectDate.innerText = projects[i].date;
+  projectTime.innerText = projects[i].time;
   projectImg.src = projects[i].image;
   projectText.innerText = projects[i].text;
+  projectLink.innerHTML = projects[i].link;
 });
 
 // Radio Button
