@@ -5,7 +5,7 @@ const projects = [
     time: "4pm",
     image: "images/projects/romika-valentine.gif",
     link:
-      "<a id='project-link' class='section-link' href='https://www.facebook.com/events/2873655309545556' target='_blank'>Facebook Event</a>",
+      "<a id='project-link' class='section-link' href='https://www.twitch.tv/romikatv' target='_blank'>Watch live on Twitch here from 4pm UK / 5pm CET</a>",
     text: `Romika invites you to watch TV all afternoon into night on 14th February. 
     
           Indoors, alone, to celebrate the mystery, tragedy and glamour of love.
