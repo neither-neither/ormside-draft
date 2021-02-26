@@ -238,8 +238,13 @@ a:hover {
   background-color: #e7e1d3;
 }
 
+#radio-two {
+  background-color: #d3d9e8;
+}
+
 #projects .section-text p,
-#radio .section-text p {
+#radio .section-text p,
+#radio-two .section-text p {
   margin: 1rem 0;
 }
 
