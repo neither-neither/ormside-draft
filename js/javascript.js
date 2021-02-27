@@ -1,5 +1,27 @@
 const projects = [
   {
+    title: "Uprising: South London Industrial Map",
+    date: "Spring 2021",
+    time: "",
+    image: "images/projects/paul-purgas.jpg",
+    link: "",
+    text: `Map & audio guide exploring the history of Industrial music in South London during the 1980's, uncovering the network of venues and squats that formed the foundation of the scene in the area, and the music that beat a defiant soundtrack against an era of cultural oppression, economic decline and aggressive corporate political organisation.
+
+           A research project by Paul Purgas.`,
+  },
+  {
+    title: "5 GATE TEMPLE SUMMER RECITAL",
+    date: "Spring 2021",
+    time: "",
+    image: "images/projects/5-gate-temple.jpg",
+    link:
+      "<a id='project-link' class='section-link' href='https://5gatetemple.bandcamp.com/' target='_blank'>5 Gate Temple on Bandcamp</a>",
+    text: `Live manifestation of a new 5 Gate Temple release. 
+
+    More information soon
+    `,
+  },
+  {
     title: "Romika TV: Valentines",
     date: "Sunday Feb 14th 2021",
     time: "4pm",
@@ -15,16 +37,6 @@ const projects = [
           With DJs: Nikola Vitković, Vedma, Devica/ACC (Palermo), Candy Sez, Katie Shannon (DJ/LIVE), Somnambulist
 
           Live sets/performances from: Adam Christensen, CECILIA, Vindicatrix, Sophie Sleigh-Johnson, Clup Alpino (Poland), Franziska Lantz, Sean Colum ( Tokyo), Robert Jack + Federico Lupo, Lucia Udvardyova/Palmovka (Budapest) + more TBC`,
-  },
-  {
-    title: "Uprising: South London Industrial Map",
-    date: "Spring 2021",
-    time: "",
-    image: "images/projects/paul-purgas.jpg",
-    link: "",
-    text: `Map & audio guide exploring the history of Industrial music in South London during the 1980's, uncovering the network of venues and squats that formed the foundation of the scene in the area, and the music that beat a defiant soundtrack against an era of cultural oppression, economic decline and aggressive corporate political organisation.
-
-           A research project by Paul Purgas.`,
   },
 ];
 
@@ -42,7 +54,6 @@ projectDate.innerText = projects[i].date;
 projectTime.innerText = projects[i].time;
 projectImg.src = projects[i].image;
 projectText.innerText = projects[i].text;
-
 projectLink.innerHTML = projects[i].link;
 
 // move carousel right
