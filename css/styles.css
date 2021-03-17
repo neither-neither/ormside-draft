@@ -1,13 +1,59 @@
-html {
-  font-family: "Helvetica", "Arial", sans-serif;
+/* =====================================================================================
+   Contents
+   1. Reset
+   2. Global Styles
+   3. Component Classes
+      3.1 Layout
+      3.2 Typography
+      3.3 Border, margin, padding
+   4. Sections
+      4.1 Navigation
+      4.2 Radio
+      4.3 Info
+   ===================================================================================== */
+
+/*   
+   1.Reset
+   ===================================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/*   
+   2. Global Styles
+   ===================================================================================== */
+
+:root {
+  --projects-color: #bbc1bc;
+  --radio-color: #e7e1d3;
+  --info-color: #faf8f8;
+  --primary-font: "Helvetica", "Arial", sans-serif;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
   background-color: #fff;
   color: #000;
-  font-size: 100%;
-  margin: 0;
 }
 
 h1 {
@@ -16,23 +62,10 @@ h1 {
 
 h2 {
   font-size: 4rem;
-  margin: 0;
 }
 
-h3 {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-h4 {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-p {
-  font-size: 0.9rem;
-  margin: 0;
-  font-weight: lighter;
+:hover {
+  transition: 0.2s ease-out;
 }
 
 button:hover {
@@ -40,243 +73,120 @@ button:hover {
 }
 
 a {
-  color: #000;
+  color: currentColor;
   font-weight: bold;
   text-decoration: none;
 }
 
 a:hover {
+  cursor: pointer;
   opacity: 0.5;
+}
+
+/*   
+   3. Component Classes
+   ===================================================================================== */
+
+/* 3.1 Layout */
+
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-50x50 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.ali-it-cnt {
+  align-items: center;
+}
+
+.ali-it-str {
+  align-items: flex-start;
+}
+
+.min-height-70 {
+  min-height: 70vh;
+}
+
+.max-width-80 {
+  max-width: 80%;
+}
+
+.section-cont {
+  margin: 0 auto;
+  min-height: 100vh; /*makes the height of each section to fit the browser size*/
+  max-width: 90%;
+
+  padding: 2rem 0;
+  scroll-snap-align: start;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+/* 3.2 Typography */
+
+.fnt-main {
+  font-family: var(--primary-font);
+}
+
+.fnt-sml {
+  font-size: 0.9rem;
+}
+
+.fnt-md {
+  font-size: 1.5rem;
+}
+
+.fnt-lg {
+  font-size: 2rem;
 }
 
 .bold {
   font-weight: bold;
 }
 
-/* =====================================================================================  
-   Header - styles for the main header section of the home page
-   ===================================================================================== */
-
-#site-header {
-  align-items: center;
-  display: flex;
-  margin: 0 auto;
-  min-height: 100vh;
-  width: 90%;
-}
-
-/* =====================================================================================  
-   Navigation - styles for the navigation elements
-   ===================================================================================== */
-
-#nav-bar {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-
-#nav-bar a {
-  margin: 0.25rem 3rem;
-  text-decoration: none;
-  padding: 0 0.25rem;
-}
-
-#nav-bar a:hover {
-  background-color: #000;
-  color: #fff;
-  opacity: 1;
-}
-
-.home-link {
-  padding: 10px;
-  position: fixed;
-  right: 0;
-  height: 70px;
-}
-
-.archive-link,
-.back-link {
-  align-items: center;
-  display: flex;
-  font-size: 2rem;
-  padding-top: 1rem;
-  text-decoration: none;
-}
-
-.play-link {
-  align-items: center;
-  display: flex;
-  font-size: 2rem;
-  text-decoration: none;
-}
-
-.archive-link p,
-.back-link p,
-.play-link p {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-left: 1rem;
-}
-
-.archive-link:hover {
-  opacity: 0.6;
-}
-
-.section-nav {
-  align-items: center;
-  display: flex;
-  padding-left: 1rem;
-}
-
-.section-nav-btn {
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
-}
-
-.section-nav-btn:hover {
-  opacity: 0.6;
-  cursor: pointer;
-}
-
-.fa-chevron-right,
-.fa-chevron-left,
-#radio-btn {
-  padding: 0 0.5rem;
-  height: 30px;
-  outline: none;
-}
-
-/* =====================================================================================  
-   Sections - styles for the sections on the home page
-   ===================================================================================== */
-
-.section-cont {
-  display: flex;
-}
-
-.section-inner-cont {
-  margin: 0 auto;
-  min-height: 100vh;
-  width: 90%;
-}
-
-.section-sub-inner-cont {
-  padding: 3rem 0;
-  height: 75%;
-}
-
-/* =====================================================================================  
-   Section Grid
-   ===================================================================================== */
-
-.section-panel-cont {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  min-height: 100%;
-}
-
-.section-panel-cont-artist {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  min-height: 100%;
-  margin: 4rem 0 0;
-}
-
-.section-left-panel {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.section-right-panel {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.section-header {
-  display: flex;
-  margin-bottom: 2rem;
-}
-
-.section-text {
-  width: 90%;
-}
-
-.section-text-header {
-  margin-bottom: 2rem;
-}
-
-.section-link {
-  font-size: 0.8rem;
-}
-
-/* =====================================================================================  
-   Projects - styles for the projects section on the home page
-   ===================================================================================== */
-
-#projects {
-  background-color: #bbc1bc;
-}
-
-#project-time {
-  font-size: 1rem;
-}
-
-#project-img {
-  max-width: 80%;
-}
-
-/* =====================================================================================  
-   Radio
-   ===================================================================================== */
-
-#radio {
-  background-color: #e7e1d3;
-}
-
-#projects .section-text p,
-#radio .section-text p,
-#radio-two .section-text p {
-  margin: 1rem 0;
-}
-
-#radio-current-shows {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 2;
-  gap: 15px 15px;
-  width: 70%;
-  margin: 0;
-}
-
-#radio-current-shows img {
-  max-width: 100%;
-}
-
-/* =====================================================================================  
-   Info
-   ===================================================================================== */
-
-#info {
-  background-color: #faf8f8;
-}
-
-#info .section-text a {
+.light {
   font-weight: lighter;
-  text-decoration: none;
 }
 
-#info .section-text a:hover {
-  color: white;
-  background-color: black;
-  opacity: 1;
+.bgc-projects {
+  background-color: var(--projects-color);
 }
 
-#address:hover {
+.bgc-radio {
+  background-color: var(--radio-color);
+}
+
+.bgc-info {
+  background-color: var(--info-color);
+}
+
+.bgc-trans {
+  background-color: transparent;
+}
+
+.hover-block:hover {
   background-color: #000;
   color: #fff;
   opacity: 1;
@@ -284,181 +194,72 @@ a:hover {
   width: fit-content;
 }
 
-#connections {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 25%;
-  margin-top: 1rem;
+/* 3.3 Border, margin, padding */
+
+.no-brd {
+  border: none;
 }
 
-#email {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
+.pad-left-std {
+  padding-left: 1rem;
 }
 
-.mailing-list label {
-  font-weight: bold;
-  text-decoration: none;
+.mrg-left-lg {
+  margin-left: 3rem;
 }
+
+.mrg-bot {
+  margin-bottom: 2rem;
+}
+
+.mrg-bot-sm {
+  margin-bottom: 1rem;
+}
+
+/*   
+   4. Sections
+   ===================================================================================== */
+
+/* 4.1 Navigation */
+
+#nav-bar a:hover {
+  padding: 0 0.25rem;
+}
+
+.home-link {
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  height: 4rem;
+}
+
+/* 4.2 Radio */
+
+#radio-current-shows {
+  grid-template-rows: 2;
+  gap: 15px 15px;
+  max-width: 70%;
+}
+
+#radio-current-shows img {
+  max-width: 100%;
+}
+
+/* 4.3 Info */
 
 .mailing-list input {
-  background-color: transparent;
   border-width: 0 0 1px;
   border-color: #000;
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 0.9rem;
   outline: 0;
   padding: 4px;
   width: 40%;
 }
 
 .mailing-list button {
-  background-color: transparent;
   border: 0;
-  font-size: 0.9rem;
-  font-family: "Helvetica", "Arial", sans-serif;
-  padding: 4px;
-}
-
-.mailing-list button:hover {
-  background-color: #000;
-  color: white;
-}
-
-.social-logo {
-  font-size: 2rem;
-  margin: 0 5rem 0 0;
+  padding: 0.3rem;
 }
 
 #ace-logo {
-  margin-right: 1.5rem;
-  margin-top: 1.5rem;
   width: 20%;
-}
-
-/* =====================================================================================  
-   Media Queries
-   ===================================================================================== */
-
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  #site-header {
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 0 0 0;
-    margin: 0 0 0 1rem;
-  }
-
-  #nav-bar a {
-    margin: 0.25rem 0;
-    padding: 0;
-    font-size: 2rem;
-  }
-
-  .section-inner-cont {
-    padding: 0;
-    width: 100%;
-  }
-
-  .section-sub-inner-cont {
-    width: 100%;
-  }
-
-  .home-link {
-    padding: 0;
-    height: 40px;
-    display: none;
-  }
-
-  .play-link p {
-    margin-left: 0.5rem;
-  }
-
-  #section-nav {
-    padding-left: 0.5rem;
-  }
-
-  .section-nav-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 1rem;
-  }
-
-  .section-panel-cont {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    margin-left: 1rem;
-  }
-
-  .section-panel-cont-artist {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    margin: 0 0 0 1rem;
-  }
-
-  .section-left-panel {
-    order: 2;
-  }
-
-  .section-right-panel {
-    order: 1;
-    align-items: flex-start;
-  }
-
-  .section-header {
-    margin-left: 1rem;
-  }
-
-  .section-text {
-    width: 90%;
-    margin-bottom: 1rem;
-  }
-
-  #project-img {
-    max-width: 90%;
-    margin-bottom: 1.5rem;
-  }
-
-  #radio-current-shows {
-    gap: 5px 5px;
-    width: 90%;
-    margin: 0 0 1.5rem;
-  }
-
-  #info .section-text a {
-    text-decoration: underline;
-  }
-
-  #email,
-  #mailing-list {
-    margin-bottom: 3rem;
-  }
-
-  .social-logo {
-    font-size: 2rem;
-    margin: 3rem 3rem 0 0;
-  }
-
-  #ace-logo {
-    width: 40%;
-    margin-top: 2rem;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  #radio-current-shows {
-    width: 100%;
-  }
 }
