@@ -1,0 +1,59 @@
+.section-cont {
+  min-height: 100vh; /* makes the height of each section be the minimum height of the viewport */
+  max-height: auto; /* allows the height to scale to the content - could also use fit content or remove altogether? */
+  padding: 5vh 5vw; /* changed from rem units as they didnt seem to scale in the same way */
+  scroll-snap-align: start; /* snaps the scroll to the top of the section */
+  /*overflow: scroll;*/ /* removed as I don't think I need it as the max-height will grow the section automatically */
+  /*max-width: 90%;*/ /* removed as using padding to control width   */
+  /*margin: 0 auto;*/ /* removed as using padding instead of margin  */
+}
+
+/*
+.section-cont header {
+  font-size: 4rem;
+}
+*/
+
+.inner-cont {
+  /*min-height: 70vh;*/ /* makes the height a minimum height so it stays consistent size between projects  */
+  min-width: 90vw; /* makes the width consistent - issue on mobile? could remove if I implement grid better */
+}
+
+.inner-cont::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  overflow-x: hidden; /* disables scrolling of the carousel by user */
+  scroll-behavior: smooth;
+  /* scroll-snap-type: x mandatory; */ /* snaps the scroll but as user scrolling is disabled it is not needed  */
+}
+
+.carousel div {
+  margin-right: 50vw;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.grid-50x50 {
+  display: grid;
+  /* grid-template-columns: 40vw 40vw;  implement min/max or similar values - check out that womans page */
+  min-width: 100%;
+  gap: 1rem;
+  align-self: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  /*grid-auto-flow: dense;*/
+}
+
+.grid-50x50 img {
+  max-width: 100%;
+}
+
+/*
+.grid-50x50 article {
+  max-height: 70vh;
+  overflow: hidden;
+}
+*/

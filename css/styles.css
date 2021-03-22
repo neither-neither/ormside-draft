@@ -38,6 +38,18 @@ dd {
   margin: 0;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+figcaption {
+  max-width: 65ch;
+}
+
 /*   
    2. Global Styles
    ===================================================================================== */
@@ -46,9 +58,23 @@ dd {
   --projects-color: #bbc1bc;
   --radio-color: #e7e1d3;
   --info-color: #faf8f8;
-  --primary-font: "Helvetica", "Arial", sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
+
+  /* modular scale */
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
 }
 
 body {
@@ -56,9 +82,11 @@ body {
   color: #000;
 }
 
+/*
 h1 {
-  font-size: 10rem;
+  font-size: 9vw;
 }
+*/
 
 h2 {
   font-size: 4rem;
@@ -72,6 +100,10 @@ button:hover {
   cursor: pointer;
 }
 
+p {
+  line-height: 1.5;
+}
+
 a {
   color: currentColor;
   font-weight: bold;
@@ -81,6 +113,10 @@ a {
 a:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+article > header {
+  font-size: 1.5rem;
 }
 
 /*   
@@ -96,11 +132,6 @@ a:hover {
 .flex-col {
   display: flex;
   flex-direction: column;
-}
-
-.grid-50x50 {
-  display: grid;
-  grid-template-columns: 50% 50%;
 }
 
 .justify-center {
@@ -131,24 +162,17 @@ a:hover {
   max-width: 80%;
 }
 
-.section-cont {
-  margin: 0 auto;
-  min-height: 100vh; /*makes the height of each section to fit the browser size*/
-  max-width: 90%;
-
-  padding: 2rem 0;
-  scroll-snap-align: start;
-}
-
 .fit-content {
   width: fit-content;
 }
 
 /* 3.2 Typography */
 
+/* // remove as I have set the font family in the root 
 .fnt-main {
   font-family: var(--primary-font);
 }
+*/
 
 .fnt-sml {
   font-size: 0.9rem;
@@ -208,17 +232,15 @@ a:hover {
   margin-left: 3rem;
 }
 
-.mrg-bot {
-  margin-bottom: 2rem;
-}
-
-.mrg-bot-sm {
-  margin-bottom: 1rem;
-}
-
 /*   
    4. Sections
    ===================================================================================== */
+
+/* 4.1 Header */
+
+#site-header {
+  font-size: 5vw;
+}
 
 /* 4.1 Navigation */
 
@@ -233,16 +255,25 @@ a:hover {
   height: 4rem;
 }
 
-/* 4.2 Radio */
+/* 4.1 Projects */
 
-#radio-current-shows {
-  grid-template-rows: 2;
-  gap: 15px 15px;
-  max-width: 70%;
+#projects nav {
+  padding: 0 1rem;
 }
 
-#radio-current-shows img {
-  max-width: 100%;
+#projects nav > a {
+  padding: 0 0.5rem;
+}
+
+/* 4.2 Radio */
+
+.radio-grid {
+  grid-template-columns: 1fr 1fr;
+  min-width: 100%;
+}
+
+.radio-grid img {
+  width: 49.5%;
 }
 
 /* 4.3 Info */
@@ -262,4 +293,10 @@ a:hover {
 
 #ace-logo {
   width: 20%;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid black;
+  opacity: 0.5;
 }

@@ -1,4 +1,4 @@
-const projects = document.querySelector(".carousel-container").children;
+const projects = document.querySelector(".inner-cont").children;
 
 let i = 1;
 
@@ -9,7 +9,7 @@ projectNavRight.addEventListener("click", () => {
     i = 0;
   }
   i++;
-  projectNavRight.href = `#${i}`;
+  projectNavRight.href = `#project-${i}`;
 });
 
 // move carousel left
@@ -19,5 +19,11 @@ projectNavLeft.addEventListener("click", () => {
     i = projects.length - 1;
   }
   i--;
-  projectNavLeft.href = `#${i}`;
+  projectNavLeft.href = `#project-${i}`;
 });
+
+/* set all projects to display none on click and then set the chosen project using i as visible
+
+might need to use a for loop to iteration and set the style to all projects
+
+*/
