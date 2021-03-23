@@ -162,6 +162,12 @@ article > header {
   max-width: 80%;
 }
 
+.min-width-100 {
+  max-width: 100%;
+
+  border: 1px solid red;
+}
+
 .fit-content {
   width: fit-content;
 }
@@ -228,6 +234,10 @@ article > header {
   padding-left: 1rem;
 }
 
+.pad-left-sm {
+  padding-left: 0.6rem;
+}
+
 .mrg-left-lg {
   margin-left: 3rem;
 }
@@ -265,6 +275,9 @@ article > header {
   padding: 0 0.5rem;
 }
 
+.hide {
+  display: none;
+}
 /* 4.2 Radio */
 
 .radio-grid {

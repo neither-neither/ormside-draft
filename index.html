@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/el.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
 
     <!--  Font Awesome  -->
     <script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"></script>
@@ -20,6 +21,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
     />
+
+    <!--  J Query  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </head>
   <body>
     <nav>
@@ -40,7 +45,8 @@
       <!-- Projects -->
         <section class="section-cont stack bgc-projects" id="projects">
             <!-- Section Header & Nav -->
-            <header class="flex-row fit-content">
+            <header class="flex-row space-between">
+              <div class="flex-row">
               <h2>Projects</h2>
               <nav class="flex-row ali-it-cnt fnt-lg" role="group">
                 <a id="left">
@@ -50,11 +56,17 @@
                 <i class="fas fa-chevron-right" tabindex="0"></i>
               </a>
               </nav>
+            </div>
+              <a class="flex-row ali-it-cnt fit-content" href="#projects"
+            ><i class="fas fa-folder fnt-lg"></i>
+            <p class="fnt-sml pad-left-sm">Archive</p></a
+          >
             </header>
             <hr>
             <div class="inner-cont flex-row carousel">
               <!-- Oxhy -->
-              <div id="project-1" class="grid-50x50">
+              <div class="flash-wrapper">
+                <div id="project-0" class="grid-50x50">
                 <article class="stack fnt-sml light">
                     <header>
                       <h3>Oxhy - Woodland Dance <br> [Performance Transmission]</h3>
@@ -67,10 +79,10 @@
                     </p>
                     <p>Produced by Ormside Projects with Mike Levitt, Susu Laroche, Luke Frith-Powell and Oxhy.</p>
                 </article>
-                  <img src="images/projects/black.jpg" alt="woman standing infront of wrecked car" />
-              </div>
+                  <img src="images/projects/oxhy-1200x900.jpg" alt="woman standing infront of wrecked car" />
+                </div>
             <!-- 5 Gate Temple -->
-              <div id="project-2" class="grid-50x50">
+                 <div id="project-1" class="hide">
               <article class="stack fnt-sml light">
                 <header>
                   <h3>5 GATE TEMPLE SUMMER RECITAL</h3>
@@ -81,12 +93,12 @@
                 <p>More information soon.</p>
               </article>
                 <img
-                  src="images/projects/black.jpg"
+                  src="images/projects/5-gate-temple-1200x900.jpg"
                   alt="woman standing infront of wrecked car"
                 />
-              </div>
+                </div>
             <!-- Paul Purgas -->
-            <div id="project-3" class="grid-50x50">
+                <div id="project-2" class="hide">
               <article class="stack fnt-sml light">
                   <header>
                     <h3>Uprising: South London Industrial Map</h3>
@@ -97,10 +109,10 @@
                   </p>
                   <p>A research project by Paul Purgas.</p>
               </article>
-                <img src="images/projects/black.jpg" alt="woman standing infront of wrecked car" />
-              </div>
+                <img src="images/projects/paul-purgas-1200x900.jpg" alt="woman standing infront of wrecked car" />
+                </div>
             <!-- Romika -->
-              <div id="project-4" class="grid-50x50">
+                <div id="project-3" class="hide">
                 <article class="stack fnt-sml light">
                   <header>
                     <h3>Romika TV: Valentines</h3>
@@ -116,23 +128,25 @@
                   <p>Live sets/performances from: Adam Christensen, CECILIA, Vindicatrix, Sophie Sleigh-Johnson, Clup Alpino (Poland), Franziska Lantz, Sean Colum ( Tokyo), Robert Jack + Federico Lupo, Lucia Udvardyova/Palmovka (Budapest) + more TBC</p>
                 </article>
                   <img
-                    src="images/projects/black.jpg"
+                    src="images/projects/romika-1200x900.jpg"
                     alt="woman standing infront of wrecked car"
                   />
-              </div>
+                </div>
             </div>
-            <!-- Archive Link -->
+            </div>
+            <!-- Archive Link  *ORIGINAL POSITION*
             <a class="flex-row ali-it-cnt fit-content" href="#projects"
             ><i class="fas fa-folder fnt-lg"></i>
             <p class="fnt-sml pad-left-std">Archive</p></a
-          >
+          > -->
         </section>
      
       
       <!-- Radio -->
       <section class="section-cont stack bgc-radio" id="radio">
             <!-- Section Header -->
-            <header class="flex-row fit-content">
+            <header class="flex-row space-between">
+              <div class="flex-row">
               <h2>Radio</h2>
               <nav class="pad-left-std flex-row ali-it-cnt">
                 <button id="radio-btn" class=" no-brd bold flex-row ali-it-cnt fnt-lg bgc-trans">
@@ -140,6 +154,11 @@
                   <p class="fnt-md pad-left-std" id='radio-btn-text'>Play</p>
                 </button>
               </nav>
+            </div>
+            <a class="flex-row ali-it-cnt fit-content" href="#projects"
+            ><i class="fas fa-folder fnt-lg"></i>
+            <p class="fnt-sml pad-left-std">Archive</p></a
+          >
             </header>
             <hr>
             <div class="inner-cont flex-row">
@@ -188,11 +207,11 @@
                   
               </div>
             </div>
-            <!-- Archive Link -->
+            <!-- Archive Link 
             <a class="flex-row ali-it-cnt fit-content" href="#projects"
             ><i class="fas fa-folder fnt-lg"></i>
             <p class="fnt-sml pad-left-std">Archive</p></a
-          >
+          > -->
       </section>
         <!-- Info -->
         <section class="section-cont stack bgc-info" id="info">
@@ -319,7 +338,7 @@
                       </div>
                       <img id="ace-logo" src="images/logos/ace-logo.png" alt="">
                   </article>
-                    <img src="images/projects/black.jpg" alt="woman standing infront of wrecked car" />
+                    <img src="images/space.jpg" alt="woman standing infront of wrecked car" />
                 </div>
               </div>
               

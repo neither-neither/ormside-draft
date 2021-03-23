@@ -23,15 +23,17 @@
   display: none;
 }
 
-.carousel {
+.carousel-NOTINUSE {
   overflow-x: hidden; /* disables scrolling of the carousel by user */
   scroll-behavior: smooth;
   /* scroll-snap-type: x mandatory; */ /* snaps the scroll but as user scrolling is disabled it is not needed  */
 }
 
+/* REMOVED DUE TO NOT USING SCROLLING ANYMORE
 .carousel div {
   margin-right: 50vw;
 }
+*/
 
 .carousel img {
   width: 100%;
@@ -40,7 +42,7 @@
 .grid-50x50 {
   display: grid;
   /* grid-template-columns: 40vw 40vw;  implement min/max or similar values - check out that womans page */
-  min-width: 100%;
+  max-width: 100%;
   gap: 1rem;
   align-self: flex-start;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));

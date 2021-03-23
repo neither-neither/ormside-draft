@@ -1,29 +1,44 @@
-const projects = document.querySelector(".inner-cont").children;
+// flashes div that holds the carousel content
+const carouselTransition = () => {
+  $(".flash-wrapper").fadeOut(0).fadeIn(1000);
+};
 
-let i = 1;
+const projects = document.querySelector(".flash-wrapper").children;
+let i = 0;
 
 // move carousel right
 const projectNavRight = document.querySelector("#right");
 projectNavRight.addEventListener("click", () => {
-  if (i === projects.length) {
-    i = 0;
+  carouselTransition();
+  if (i === projects.length - 1) {
+    i = 0 - 1;
   }
   i++;
-  projectNavRight.href = `#project-${i}`;
+  // for loop that iterates over all projects and resets classes
+  for (let k = 0; k < projects.length; k++) {
+    projects[k].classList.remove("grid-50x50");
+    projects[k].classList.add("hide");
+  }
+  // classes added and removed to show desired project
+  projects[i].classList.add("grid-50x50");
+  projects[i].classList.remove("hide");
 });
 
 // move carousel left
 const projectNavLeft = document.querySelector("#left");
 projectNavLeft.addEventListener("click", () => {
-  if (i < 0) {
-    i = projects.length - 1;
+  carouselTransition();
+  console.log("initial value of i", i);
+  if (i === 0) {
+    i = projects.length;
   }
   i--;
-  projectNavLeft.href = `#project-${i}`;
+  // for loop that iterates over all projects and resets classes
+  for (let k = 0; k < projects.length; k++) {
+    projects[k].classList.remove("grid-50x50");
+    projects[k].classList.add("hide");
+  }
+  // classes added and removed to show desired project
+  projects[i].classList.add("grid-50x50");
+  projects[i].classList.remove("hide");
 });
-
-/* set all projects to display none on click and then set the chosen project using i as visible
-
-might need to use a for loop to iteration and set the style to all projects
-
-*/
