@@ -1,6 +1,6 @@
 // flashes div that holds the carousel content
 const carouselTransition = () => {
-  $(".flash-wrapper").fadeOut(0).fadeIn(1000);
+  $(".flash-wrapper").fadeOut(0).fadeIn(500);
 };
 
 const projects = document.querySelector(".flash-wrapper").children;

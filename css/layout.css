@@ -8,12 +8,6 @@
   /*margin: 0 auto;*/ /* removed as using padding instead of margin  */
 }
 
-/*
-.section-cont header {
-  font-size: 4rem;
-}
-*/
-
 .inner-cont {
   /*min-height: 70vh;*/ /* makes the height a minimum height so it stays consistent size between projects  */
   min-width: 90vw; /* makes the width consistent - issue on mobile? could remove if I implement grid better */
@@ -21,6 +15,10 @@
 
 .inner-cont::-webkit-scrollbar {
   display: none;
+}
+
+.flash-wrapper {
+  min-width: 100%;
 }
 
 .carousel-NOTINUSE {
@@ -36,7 +34,7 @@
 */
 
 .carousel img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .grid-50x50 {

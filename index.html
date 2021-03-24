@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/el.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/media-queries.css" />
+    <link rel="stylesheet" href="css/dropdown.css" />
 
     <!--  Font Awesome  -->
     <script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"></script>
@@ -29,7 +30,7 @@
   <body>
     <nav>
     <a href="#site-header">
-      <img class="home-link" src="images/logos/orm-logo.png" alt="" tabindex="1"/>
+      <img class="home-link" src="images/logos/orm-logo-n.png" alt="" tabindex="1"/>
     </a>
     </nav>
     <!-- Header -->
@@ -57,10 +58,16 @@
               </a>
               </nav>
             </div>
-              <a class="flex-row ali-it-cnt fit-content" href="#projects"
-            ><i class="fas fa-folder fnt-lg"></i>
-            <p class="fnt-sml pad-left-sm">Archive</p></a
-          >
+            
+            <div class="dropdown flex-row justify-center">
+              <button class="dropbtn flex-row ali-it-cnt"><i class="fas fa-folder fnt-lg"></i> <p class="pad-left-sm bold">Archive</p> </button>
+              <div class="dropdown-content project-archive bgc-projects">
+                <a href="#">Spring 2021</a>
+                <a href="#">Summer 2021</a>
+                <a href="#">Autumn 2021</a>
+              </div>
+            </div>
+            
             </header>
             <hr>
             <div class="inner-cont flex-row carousel">
@@ -155,10 +162,15 @@
                 </button>
               </nav>
             </div>
-            <a class="flex-row ali-it-cnt fit-content" href="#projects"
-            ><i class="fas fa-folder fnt-lg"></i>
-            <p class="fnt-sml pad-left-std">Archive</p></a
-          >
+            <!-- NEW ARCHIVE MENU-->
+            <div class="dropdown flex-row justify-center">
+              <button class="dropbtn flex-row ali-it-cnt"><i class="fas fa-folder fnt-lg"></i> <p class="pad-left-sm bold">Archive</p> </button>
+              <div class="dropdown-content radio-archive bgc-radio">
+                <a href="#">March 23rd</a>
+                <a href="#">March 8th</a>
+                <a href="#">Feb 26th</a>
+              </div>
+            </div>
             </header>
             <hr>
             <div class="inner-cont flex-row">
@@ -169,28 +181,28 @@
                       <h4>March 2021</h4>
                     </header>
                     <p>
-                      <a href="radio-shows/the-changing-of-the-gaurd.html"
+                      <a class="radio-show-one" href="radio-shows/the-changing-of-the-gaurd.html"
                         >> The Changing of the Guard - Sarah Rosamond Hartnett and Kieron Livingstone</a
                       >
                       <br>
                       Live from the ceremonial counties of Kent and Essex: the sounds of the Hoo Peninsula. A psychic Journey from Shornemead Fort to Tilbury Fort via carparks, laybys and graveyards.
                     </p>
                     <p>
-                      <a href="radio-shows/nosymbols.html"
+                      <a class="radio-show-two" href="radio-shows/nosymbols.html"
                         >> No Symbols Radio - Beneath</a
                       >
                       <br>
                       No Symbols is a club night held at Ormside run by Beneath.
                     </p>
                     <p>
-                      <a href="radio-shows/susu-laroche.html"
+                      <a class="radio-show-three" href="radio-shows/susu-laroche.html"
                         >> Susu Laroche - Oil</a
                       >
                       <br>
                       A podcast about virtue, food and indulgence. Featuring ASMR cooking with Louis Backhouse, dislikes with CG von Platen, shopping with Freya Field-Donovan and brain food with Shola von Reinhold. + featuring music by El Mahdy Junior, Abu Ama, Severin Black + Owen Pratt, Ramzi and Susu Laroche.
                     </p>
                     <p>
-                      <a href="radio-shows/jessica-boyall.html"
+                      <a class="radio-show-four" href="radio-shows/jessica-boyall.html"
                         >> Alan Lomax – Focus on a Rambler by Jessica Boyall</a
                       >
                       <br>
@@ -199,10 +211,10 @@
 
                 </article>
                 <div class="radio-grid">
-                  <img src="images/projects/black.jpg"/>
-                  <img src="images/projects/black.jpg"/>
-                  <img src="images/projects/black.jpg"/>
-                  <img src="images/projects/black.jpg"/>
+                  <img src="images/projects/5-gate-temple-1200x900.jpg"/>
+                  <img src="images/projects/oxhy-1200x900.jpg"/>
+                  <img src="images/projects/paul-purgas-1200x900.jpg"/>
+                  <img src="images/projects/romika-1200x900.jpg"/>
                 </div>
                   
               </div>
@@ -219,6 +231,7 @@
               <header class="flex-row fit-content">
                 <h2>Info</h2> 
               </header>
+              <hr>
               <div class="inner-cont flex-row">
                 <div class="grid-50x50">
                   <article class="stack fnt-sml light">
@@ -338,7 +351,26 @@
                       </div>
                       <img id="ace-logo" src="images/logos/ace-logo.png" alt="">
                   </article>
-                    <img src="images/space.jpg" alt="woman standing infront of wrecked car" />
+                  <div id="slideshow">
+                    <div>
+                      <img src="images/info/space.jpg">
+                    </div>
+                    <div>
+                      <img src="images/info/space-4.jpg">
+                    </div>
+                      <div>
+                        <img src="images/info/space-3.jpg">
+                      </div>
+                      <div>
+                        
+                        <img src="images/info/space-2.jpg">
+                      </div>
+                        <div>
+                          <img src="images/info/space-5.jpg">
+                        </div>
+                    </div>
+                  </div>
+                    <!--<img src="images/space.jpg" alt="woman standing infront of wrecked car" />-->
                 </div>
               </div>
               

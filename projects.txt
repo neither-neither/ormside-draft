@@ -1,5 +1,5 @@
 <!-- 5 Gate Temple -->
-              <div id="project-2" class="grid-50x50">
+                 <div id="project-1" class="hide">
               <article class="stack fnt-sml light">
                 <header>
                   <h3>5 GATE TEMPLE SUMMER RECITAL</h3>
@@ -10,12 +10,12 @@
                 <p>More information soon.</p>
               </article>
                 <img
-                  src="images/projects/black.jpg"
+                  src="images/projects/5-gate-temple-1200x900.jpg"
                   alt="woman standing infront of wrecked car"
                 />
-              </div>
+                </div>
             <!-- Paul Purgas -->
-            <div id="project-3" class="grid-50x50">
+                <div id="project-2" class="hide">
               <article class="stack fnt-sml light">
                   <header>
                     <h3>Uprising: South London Industrial Map</h3>
@@ -26,10 +26,10 @@
                   </p>
                   <p>A research project by Paul Purgas.</p>
               </article>
-                <img src="images/projects/black.jpg" alt="woman standing infront of wrecked car" />
-              </div>
+                <img src="images/projects/paul-purgas-1200x900.jpg" alt="woman standing infront of wrecked car" />
+                </div>
             <!-- Romika -->
-              <div id="project-4" class="grid-50x50">
+                <div id="project-3" class="hide">
                 <article class="stack fnt-sml light">
                   <header>
                     <h3>Romika TV: Valentines</h3>
@@ -45,7 +45,7 @@
                   <p>Live sets/performances from: Adam Christensen, CECILIA, Vindicatrix, Sophie Sleigh-Johnson, Clup Alpino (Poland), Franziska Lantz, Sean Colum ( Tokyo), Robert Jack + Federico Lupo, Lucia Udvardyova/Palmovka (Budapest) + more TBC</p>
                 </article>
                   <img
-                    src="images/projects/black.jpg"
+                    src="images/projects/romika-1200x900.jpg"
                     alt="woman standing infront of wrecked car"
                   />
-              </div>
+                </div>
