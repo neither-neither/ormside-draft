@@ -57,18 +57,15 @@ radioShowFour.addEventListener("mouseleave", () => {
   opFull();
 });
 
-function opLow(index) {
-  for (let i = 0; i < radioImg.length; i++) {
-    radioImg[i].style.opacity = "0.2";
-  }
-  radioImg[index].style.opacity = "1";
-}
+const opLow = (index) => {
+  radioImg[index].style.boxShadow = "0px 8px 16px 0px rgba(0, 0, 0, .7)";
+};
 
-function opFull() {
+const opFull = () => {
   for (let i = 0; i < radioImg.length; i++) {
-    radioImg[i].style.opacity = "1";
+    radioImg[i].style.boxShadow = "none";
   }
-}
+};
 
 // Info Slideshow
 

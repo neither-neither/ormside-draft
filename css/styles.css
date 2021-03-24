@@ -47,7 +47,7 @@ h5,
 h6,
 li,
 figcaption {
-  max-width: 65ch;
+  max-width: 70ch;
 }
 
 /*   
@@ -82,11 +82,9 @@ body {
   color: #000;
 }
 
-/*
 h1 {
-  font-size: 9vw;
+  font-size: 10vw;
 }
-*/
 
 h2 {
   font-size: 4rem;
@@ -116,14 +114,13 @@ a:hover {
 }
 
 article > header {
-  font-size: 1.5rem;
+  font-size: 2em;
 }
 
 hr {
   width: 100%;
   border: 1px solid black;
-  opacity: 0.5;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 /*   
@@ -157,35 +154,11 @@ hr {
   align-items: center;
 }
 
-.ali-it-str {
-  align-items: flex-start;
-}
-
-.min-height-70 {
-  min-height: 70vh;
-}
-
-.max-width-80 {
-  max-width: 80%;
-}
-
-.min-width-100 {
-  max-width: 100%;
-
-  border: 1px solid red;
-}
-
 .fit-content {
   width: fit-content;
 }
 
 /* 3.2 Typography */
-
-/* // remove as I have set the font family in the root 
-.fnt-main {
-  font-family: var(--primary-font);
-}
-*/
 
 .fnt-sml {
   font-size: 0.9rem;
@@ -253,12 +226,6 @@ hr {
    4. Sections
    ===================================================================================== */
 
-/* 4.1 Header */
-
-#site-header {
-  font-size: 5vw;
-}
-
 /* 4.1 Navigation */
 
 #nav-bar a:hover {
@@ -285,6 +252,7 @@ hr {
 .hide {
   display: none;
 }
+
 /* 4.2 Radio */
 
 .radio-grid {
@@ -297,6 +265,10 @@ hr {
 }
 
 /* 4.3 Info */
+
+#links a {
+  font-weight: lighter;
+}
 
 .mailing-list input {
   border-width: 0 0 1px;
@@ -316,10 +288,8 @@ hr {
 }
 
 #slideshow {
-  /*margin: 50px auto;*/
   position: relative;
-  width: 100%;
-  /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);*/
+  max-width: 100%;
 }
 
 #slideshow > div {
