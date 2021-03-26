@@ -13,9 +13,11 @@
       4.4 Archive Menu
       4.5 Hover
    5. Sections
-      5.1 Navigation
-      5.2 Radio
-      5.3 Info
+      5.1 Site Header
+      5.2 Navigation
+      5.3 Projects
+      5.4 Radio
+      5.5 Info
    6. Media Queries     
    ===================================================================================== */
 
@@ -94,7 +96,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 4em;
 }
 
 :hover {
@@ -152,7 +154,8 @@ input {
   min-width: 90vw;
 }
 
-.flash-wrapper {
+.flash-wrapper,
+.radio-wrapper {
   min-width: 100%;
 }
 
@@ -214,19 +217,20 @@ input {
 
 /* 4.1 Typography */
 
-/* 3 uses on the inner containers */
+/* 3 uses on the inner containers 
 .fnt-sml {
   font-size: 0.9rem;
 }
+*/
 
 /* 2 uses */
 .fnt-md {
-  font-size: 1.5rem;
+  font-size: 1em;
 }
 
 /* 9 uses - header nav links, project nav, archive logo, social links  */
 .fnt-lg {
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 /* 9 uses */
@@ -332,7 +336,13 @@ form button:hover {
    5. Sections
    ===================================================================================== */
 
-/* 5.1 Navigation */
+/* 5.1 Site Header */
+
+#site-header .flex-col {
+  justify-content: center;
+}
+
+/* 5.2 Navigation */
 
 #nav-bar a:hover {
   padding: 0 0.25rem;
@@ -345,7 +355,7 @@ form button:hover {
   height: 4rem;
 }
 
-/* 5.1 Projects */
+/* 5.3 Projects */
 
 #projects nav {
   padding: 0 1rem;
@@ -359,7 +369,7 @@ form button:hover {
   display: none;
 }
 
-/* 5.2 Radio */
+/* 5.4 Radio */
 
 #radio nav,
 #radio nav p {
@@ -367,15 +377,14 @@ form button:hover {
 }
 
 .radio-grid {
-  grid-template-columns: 1fr 1fr;
-  min-width: 100%;
+  max-width: 100%;
 }
 
 .radio-grid img {
-  width: 49.5%;
+  max-width: 49.5%;
 }
 
-/* 5.3 Info */
+/* 5.5 Info */
 
 #links a {
   font-weight: lighter;
@@ -418,8 +427,20 @@ form button:hover {
    ===================================================================================== */
 
 /* CHANGE TO REM??? */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 56rem) {
   .home-link {
     display: none;
   }
+
+  h1 {
+    font-size: 22vw;
+  }
 }
+
+/*
+@media only screen and (max-width: 1200px) {
+  .radio-grid img {
+    min-width: 100%;
+  }
+}
+*/

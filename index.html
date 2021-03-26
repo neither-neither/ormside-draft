@@ -31,12 +31,16 @@
     </nav>
     <!-- Header -->
     <header class="flex-row ali-it-cnt section-cont" id="site-header">
-      <h1>Ormside</h1>
-      <nav class="flex-col mrg-left-lg fnt-lg bold stack" id="nav-bar" role="group">
-        <a href="#projects">Projects</a>
-        <a href="#radio">Radio</a>
-        <a href="#info">Info</a>
-      </nav>
+      <div class="inner-cont">
+        <div class="grid-50x50">
+          <h1 class="flex-col">Ormside</h1>
+          <nav class="flex-col fnt-lg bold stack" id="nav-bar" role="group">
+            <a href="#projects">Projects</a>
+            <a href="#radio">Radio</a>
+            <a href="#info">Info</a>
+          </nav>
+        </div>
+      </div>
     </header>
     <main>
       <!-- Projects -->
@@ -146,7 +150,7 @@
               <nav class="flex-row ali-it-cnt">
                 <button id="radio-btn" class="bold flex-row ali-it-cnt fnt-lg">
                   <i class='fas fa-play'></i>
-                  <p class="fnt-md" id='radio-btn-text'>Play</p>
+                  <p id='radio-btn-text'>Play</p>
                 </button>
               </nav>
             </div>
@@ -319,13 +323,16 @@
               <div class="inner-cont flex-row fnt-sml">
                 <div class="grid-50x50">
                   <article class="stack">
-                      <h3 class="fnt-md">
+                      <h3 class="fnt-lg">
                         <a href="https://goo.gl/maps/419ihWEyERvbZ9V77" target="_blank" rel="noopener noreferrer">
                         ORMSIDE PROJECTS <br />
                         Unit 32 Ormside St <br />
                         Penarth Centre <br />
                         SE15 1TR
                       </a></h3>
+                      <a class="fnt-lg bold " id="email" href="mailto:contact@ormside.co.uk"
+                      >contact@ormside.co.uk</a
+                      >
                       <p>
                       <span class="bold">Ormside Projects ></span> arts & music project space, est 2015.
                       </p>
@@ -395,9 +402,7 @@
                           >shoot@ormside.co.uk</a
                         >
                       </p>
-                      <a class="fnt-md bold " id="email" href="mailto:contact@ormside.co.uk"
-                      >contact@ormside.co.uk</a
-                      >
+                      
                       <form class="mailing-list" action="https://ormiside.us7.list-manage.com/subscribe/post" method="POST" >
                       <input type="hidden" name="u" value="8076ef518d4899e2a55b83370">
                       <input type="hidden" name="id" value="f6c70865fe">

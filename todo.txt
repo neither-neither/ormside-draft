@@ -1,3 +1,0 @@
-Fonts
-sort out the header text - make the header a grid?
-font sizes - implement better cascade and em units
