@@ -2,14 +2,21 @@
    Contents
    1. Reset
    2. Global Styles
-   3. Component Classes
-      3.1 Layout
-      3.2 Typography
-      3.3 Border, margin, padding
-   4. Sections
-      4.1 Navigation
-      4.2 Radio
-      4.3 Info
+   3. Layout
+      3.1 Containers
+      3.2 Flexbox & Grid
+      3.3 Stack
+   4. Component Classes
+      4.1 Layout
+      4.2 Typography
+      4.3 Border, margin, padding
+      4.4 Archive Menu
+      4.5 Hover
+   5. Sections
+      5.1 Navigation
+      5.2 Radio
+      5.3 Info
+   6. Media Queries     
    ===================================================================================== */
 
 /*   
@@ -123,11 +130,37 @@ hr {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
+button,
+input {
+  background-color: transparent;
+  border: none;
+}
+
 /*   
-   3. Component Classes
+   3. Layout
    ===================================================================================== */
 
-/* 3.1 Layout */
+/* 3.1 Containers */
+
+.section-cont {
+  min-height: 100vh;
+  padding: 5vh 5vw;
+  scroll-snap-align: start;
+}
+
+.inner-cont {
+  min-width: 90vw;
+}
+
+.flash-wrapper {
+  min-width: 100%;
+}
+
+.flash-wrapper article {
+  font-weight: lighter;
+}
+
+/* 3.2 Flexbox & Grid */
 
 .flex-row {
   display: flex;
@@ -138,14 +171,6 @@ hr {
   flex-direction: column;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
-.space-evenly {
-  justify-content: space-evenly;
-}
-
 .space-between {
   justify-content: space-between;
 }
@@ -154,31 +179,74 @@ hr {
   align-items: center;
 }
 
-.fit-content {
-  width: fit-content;
+.grid-50x50 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+  max-width: 100%;
 }
 
-/* 3.2 Typography */
+.grid-50x50 img {
+  max-width: 100%;
+}
 
+/* 3.3 Stack */
+
+.stack {
+  --space: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack > * + * {
+  margin-top: var(--space);
+}
+
+/*   
+   4. Component Classes
+   ===================================================================================== */
+
+/* 4.1 Typography */
+
+/* 3 uses on the inner containers */
 .fnt-sml {
   font-size: 0.9rem;
 }
 
+/* 2 uses */
 .fnt-md {
   font-size: 1.5rem;
 }
 
+/* 9 uses - header nav links, project nav, archive logo, social links  */
 .fnt-lg {
   font-size: 2rem;
 }
 
+/* 9 uses */
 .bold {
   font-weight: bold;
 }
 
-.light {
+#radio article,
+#info article p {
   font-weight: lighter;
 }
+
+/* 4.2 Border, margin, padding */
+
+/* 1 uses in header - REMOVE ONCE I REDO HEADER*/
+.mrg-left-lg {
+  margin-left: 3rem;
+}
+
+/* 4.3 Color */
 
 .bgc-projects {
   background-color: var(--projects-color);
@@ -192,11 +260,67 @@ hr {
   background-color: var(--info-color);
 }
 
-.bgc-trans {
-  background-color: transparent;
+/* 4.4 Archive Menu */
+
+.archive {
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 1rem;
 }
 
-.hover-block:hover {
+.dropdown {
+  position: relative;
+  justify-content: center;
+}
+
+.dropdown button p {
+  padding-left: 0.6rem;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: absolute;
+  margin-top: 4rem;
+  min-width: max-content;
+  z-index: 1;
+}
+
+.dropdown-content p {
+  color: black;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.radio-archive p:hover {
+  background-color: black;
+  color: #e7e1d3;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.project-archive p:hover {
+  background-color: black;
+  color: #bbc1bc;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* 4.5 Hover */
+
+#email:hover,
+#commercial:hover,
+#nav-bar a:hover,
+#info h3:hover,
+#links a:hover,
+form button:hover {
   background-color: #000;
   color: #fff;
   opacity: 1;
@@ -204,29 +328,11 @@ hr {
   width: fit-content;
 }
 
-/* 3.3 Border, margin, padding */
-
-.no-brd {
-  border: none;
-}
-
-.pad-left-std {
-  padding-left: 1rem;
-}
-
-.pad-left-sm {
-  padding-left: 0.6rem;
-}
-
-.mrg-left-lg {
-  margin-left: 3rem;
-}
-
 /*   
-   4. Sections
+   5. Sections
    ===================================================================================== */
 
-/* 4.1 Navigation */
+/* 5.1 Navigation */
 
 #nav-bar a:hover {
   padding: 0 0.25rem;
@@ -239,7 +345,7 @@ hr {
   height: 4rem;
 }
 
-/* 4.1 Projects */
+/* 5.1 Projects */
 
 #projects nav {
   padding: 0 1rem;
@@ -253,7 +359,12 @@ hr {
   display: none;
 }
 
-/* 4.2 Radio */
+/* 5.2 Radio */
+
+#radio nav,
+#radio nav p {
+  padding-left: 1rem;
+}
 
 .radio-grid {
   grid-template-columns: 1fr 1fr;
@@ -264,13 +375,14 @@ hr {
   width: 49.5%;
 }
 
-/* 4.3 Info */
+/* 5.3 Info */
 
 #links a {
   font-weight: lighter;
 }
 
 .mailing-list input {
+  border: 1px solid;
   border-width: 0 0 1px;
   border-color: #000;
   outline: 0;
@@ -281,6 +393,11 @@ hr {
 .mailing-list button {
   border: 0;
   padding: 0.3rem;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 5rem);
 }
 
 #ace-logo {
@@ -294,4 +411,15 @@ hr {
 
 #slideshow > div {
   position: absolute;
+}
+
+/* =====================================================================================  
+   6. Media Queries
+   ===================================================================================== */
+
+/* CHANGE TO REM??? */
+@media only screen and (max-width: 768px) {
+  .home-link {
+    display: none;
+  }
 }

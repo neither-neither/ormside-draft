@@ -42,3 +42,44 @@ projectNavLeft.addEventListener("click", () => {
   projects[i].classList.add("grid-50x50");
   projects[i].classList.remove("hide");
 });
+
+////////////////////////////////////////////////////////////
+
+const radioTransition = () => {
+  $(".radio-wrapper").fadeOut(0).fadeIn(500);
+};
+
+const radioArchive = document.querySelector(".radio-wrapper").children;
+const feb14th = document.querySelector("#feb-14th");
+const march22nd = document.querySelector("#march-22nd");
+const march8th = document.querySelector("#march-8th");
+
+document.querySelector("#feb-14th-arc").addEventListener("click", () => {
+  radioTransition();
+  feb14th.classList.remove("hide");
+  feb14th.classList.add("grid-50x50");
+  march22nd.classList.remove("grid-50x50");
+  march22nd.classList.add("hide");
+  march8th.classList.remove("grid-50x50");
+  march8th.classList.add("hide");
+});
+
+document.querySelector("#mar-8th-arc").addEventListener("click", () => {
+  radioTransition();
+  feb14th.classList.add("hide");
+  feb14th.classList.remove("grid-50x50");
+  march8th.classList.remove("hide");
+  march8th.classList.add("grid-50x50");
+  march22nd.classList.remove("grid-50x50");
+  march22nd.classList.add("hide");
+});
+
+document.querySelector("#mar-22nd-arc").addEventListener("click", () => {
+  radioTransition();
+  feb14th.classList.add("hide");
+  feb14th.classList.remove("grid-50x50");
+  march8th.classList.add("hide");
+  march8th.classList.remove("grid-50x50");
+  march22nd.classList.add("grid-50x50");
+  march22nd.classList.remove("hide");
+});

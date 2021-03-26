@@ -10,10 +10,10 @@
     <link rel="shortcut icon" href="images/logos/favicon.ico" />
     <!--  CSS  -->
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/el.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/media-queries.css" />
-    <link rel="stylesheet" href="css/dropdown.css" />
+    <!--<link rel="stylesheet" href="css/el.css" />-->
+    <!--<link rel="stylesheet" href="css/layout.css" />-->
+    <!--<link rel="stylesheet" href="css/media-queries.css" />-->
+    <!--<link rel="stylesheet" href="css/dropdown.css" />-->
     <!--  Font Awesome  -->
     <script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"></script>
     <link
@@ -33,9 +33,9 @@
     <header class="flex-row ali-it-cnt section-cont" id="site-header">
       <h1>Ormside</h1>
       <nav class="flex-col mrg-left-lg fnt-lg bold stack" id="nav-bar" role="group">
-        <a class="hover-block" href="#projects">Projects</a>
-        <a class="hover-block" href="#radio">Radio</a>
-        <a class="hover-block" href="#info">Info</a>
+        <a href="#projects">Projects</a>
+        <a href="#radio">Radio</a>
+        <a href="#info">Info</a>
       </nav>
     </header>
     <main>
@@ -55,21 +55,21 @@
               </nav>
             </div>
             <!-- Projects Archive -->
-            <div class="dropdown flex-row justify-center">
-              <button class="archive flex-row ali-it-cnt"><i class="fas fa-folder fnt-lg"></i> <p class="pad-left-sm bold">Archive</p> </button>
+            <div class="dropdown flex-row ">
+              <button class="archive flex-row ali-it-cnt"><i class="fas fa-folder fnt-lg"></i><p>Archive</p> </button>
               <div class="dropdown-content project-archive bgc-projects">
-                <a href="#">Spring 2021</a>
-                <a href="#">Summer 2021</a>
-                <a href="#">Autumn 2021</a>
+                <p>Spring 2021</p>
+                <p>Summer 2021</p>
+                <p>Autumn 2021</p>
               </div>
             </div>
             </header>
             <hr>
-            <div class="inner-cont flex-row">
+            <div class="inner-cont flex-row fnt-sml">
               <!-- Oxhy -->
               <div class="flash-wrapper">
                 <div id="project-0" class="grid-50x50">
-                <article class="stack fnt-sml">
+                <article class="stack">
                     <header>
                       <h3>Oxhy - Woodland Dance <br> [Performance Transmission]</h3>
                       <h4>Monday 8th March 2021 20:00 GMT</h4>
@@ -85,7 +85,7 @@
                 </div>
             <!-- 5 Gate Temple -->
                  <div id="project-1" class="hide">
-              <article class="stack fnt-sml">
+                  <article class="stack">
                 <header>
                   <h3>5 GATE TEMPLE SUMMER RECITAL</h3>
                   <h4>Spring 2021</h4>
@@ -101,7 +101,7 @@
                 </div>
             <!-- Paul Purgas -->
                 <div id="project-2" class="hide">
-              <article class="stack fnt-sml">
+              <article class="stack">
                   <header>
                     <h3>Uprising: South London Industrial Map</h3>
                     <h4>21st March 2021 4pm</h4>
@@ -115,7 +115,7 @@
                 </div>
             <!-- Romika -->
                 <div id="project-3" class="hide">
-                <article class="stack fnt-sml">
+                <article class="stack">
                   <header>
                     <h3>Romika TV: Valentines</h3>
                     <h4>Sunday Feb 14th 2021 4pm</h4>
@@ -143,52 +143,62 @@
             <header class="flex-row space-between">
               <div class="flex-row">
               <h2>Radio</h2>
-              <nav class="pad-left-std flex-row ali-it-cnt">
-                <button id="radio-btn" class=" no-brd bold flex-row ali-it-cnt fnt-lg bgc-trans">
+              <nav class="flex-row ali-it-cnt">
+                <button id="radio-btn" class="bold flex-row ali-it-cnt fnt-lg">
                   <i class='fas fa-play'></i>
-                  <p class="fnt-md pad-left-std" id='radio-btn-text'>Play</p>
+                  <p class="fnt-md" id='radio-btn-text'>Play</p>
                 </button>
               </nav>
             </div>
             <!-- Radio Archive -->
-            <div class="dropdown flex-row justify-center">
-              <button class="archive flex-row ali-it-cnt"><i class="fas fa-folder fnt-lg"></i> <p class="pad-left-sm bold">Archive</p> </button>
+            <div class="dropdown flex-row">
+              <button class="archive flex-row ali-it-cnt"><i class="fas fa-folder fnt-lg"></i><p>Archive</p> </button>
               <div class="dropdown-content radio-archive bgc-radio">
-                <a href="#">March 23rd</a>
-                <a href="#">March 8th</a>
-                <a href="#">Feb 26th</a>
+                <p id="mar-22nd-arc">March 22nd</p>
+                <p id="mar-8th-arc" >March 8th</p>
+                <p id="feb-14th-arc">Feb 14th</p>
               </div>
             </div>
             </header>
             <hr>
-            <div class="inner-cont flex-row">
-              <div class="grid-50x50">
-                <article class="stack fnt-sml light">
+            <div class="inner-cont flex-row fnt-sml">
+              <div class="radio-wrapper">
+                <!-- Current Shows -->
+                <div id="march-22nd" class="grid-50x50">
+                  <article class="stack">
                     <header>
                       <h3>Current Shows</h3>
-                      <h4>March 2021</h4>
+                      <h4>March 22nd 2021</h4>
                     </header>
-                    <p class="radio-show-one">
-                      <a  href="radio-shows/the-changing-of-the-gaurd.html"
-                        >> The Changing of the Guard - Sarah Rosamond Hartnett and Kieron Livingstone</a
+                    <p onmouseover="radioHL(9)" onmouseout="radioNL(9)" class="radio-show-one">
+                      <a href="radio-shows/show-page.html"
+                        >> Love it when u tell me ‘bout ur nightmares - aircode</a
                       >
                       <br>
-                      Live from the ceremonial counties of Kent and Essex: the sounds of the Hoo Peninsula. A psychic Journey from Shornemead Fort to Tilbury Fort via carparks, laybys and graveyards.
+                      Your nightmares warped in a chaotic soundtrack of distress and comfort.
                     </p>
-                    <p class="radio-show-two">
-                      <a  href="radio-shows/nosymbols.html"
-                        >> No Symbols Radio - Beneath</a
+                    <p onmouseover="radioHL(10)" onmouseout="radioNL(10)" class="radio-show-two">
+                      <a href="radio-shows/show-page.html"
+                        >> Trying to get away? - Oliver Corino</a
                       >
                       <br>
-                      No Symbols is a club night held at Ormside run by Beneath.
+                      Two stories about transcendence. Sleazy Boarding - a short story about a group of 
+                      dressed up people trying to go on a city break to Prague. Savage Gardens - the 
+                      story of how Canary Wharf ended up in the derelict docklands of East London. 
+                      Extract from the first chapter of Architectural Fathers by Canary Wharf.
                     </p>
-                    <p class="radio-show-three">
-                      <a c href="radio-shows/susu-laroche.html"
-                        >> Susu Laroche - Oil</a
+                    <p onmouseover="radioHL(11)" onmouseout="radioNL(11)" class="radio-show-three">
+                      <a c href="radio-shows/show-page.html"
+                        >> Threatened Music - Ralph</a
                       >
                       <br>
-                      A podcast about virtue, food and indulgence. Featuring ASMR cooking with Louis Backhouse, dislikes with CG von Platen, shopping with Freya Field-Donovan and brain food with Shola von Reinhold. + featuring music by El Mahdy Junior, Abu Ama, Severin Black + Owen Pratt, Ramzi and Susu Laroche.
+                      Ralph works in social care. He plays in the bands Permission and Subdued. 
+                      He also plays improvised music in private. Moving between jazz, hardcore punk, 
+                      poetry and electronics; traversing continents and timelines from the mid-twenith 
+                      century to the current moment, Ralph's show makes unexpected connections between 
+                      a seemingly eclectic variety of practitioners from Archie Sheep to Orden Mundial.
                     </p>
+                    <!--
                     <p class="radio-show-four">
                       <a  href="radio-shows/jessica-boyall.html"
                         >> Alan Lomax – Focus on a Rambler by Jessica Boyall</a
@@ -196,104 +206,196 @@
                       <br>
                       Ethnomusicologist, Alan Lomax, spent much of his life recording folk songs in America, Europe and the West Indies. This show examines how he used sound technology to preserve and share the music of the working classes and repressed minorities. It features music by Lomax, Leadbelly, Memphis Slim, Woody Guthrie, Brian Eno, the United Sacred Harp Convention and more.
                     </p>
+                    -->
                 </article>
                 <div class="radio-grid">
-                  <img src="images/projects/5-gate-temple-1200x900.jpg"/>
-                  <img src="images/projects/oxhy-1200x900.jpg"/>
-                  <img src="images/projects/paul-purgas-1200x900.jpg"/>
-                  <img src="images/projects/romika-1200x900.jpg"/>
-                </div>
+                  <img class="radio-img-9" src="images/projects/5-gate-temple-1200x900.jpg"/>
+                  <img class="radio-img-10" src="images/projects/oxhy-1200x900.jpg"/>
+                  <img class="radio-img-11" src="images/projects/paul-purgas-1200x900.jpg"/>
                   
+                </div>  
+                </div>
+                <!-- March Shows -->
+                <div id="march-8th" class="hide">
+                  <article class="stack">
+                    <header>
+                      <h4>March 8th 2021</h4>
+                    </header>
+                    <p onmouseover="radioHL(5)" onmouseout="radioNL(5)" class="radio-show-one">
+                      <a href="radio-shows/show-page.html"
+                        >> The Changing of the Guard - Sarah Rosamond Hartnett and Kieron Livingstone</a
+                      >
+                      <br>
+                      Live from the ceremonial counties of Kent and Essex: the sounds of the Hoo Peninsula. A psychic Journey from Shornemead Fort to Tilbury Fort via carparks, laybys and graveyards.
+                    </p>
+                    <p onmouseover="radioHL(6)" onmouseout="radioNL(6)" class="radio-show-two">
+                      <a  href="radio-shows/show-page.html"
+                        >> No Symbols Radio - Beneath</a
+                      >
+                      <br>
+                      No Symbols is a club night held at Ormside run by Beneath.
+                    </p>
+                    <p onmouseover="radioHL(7)" onmouseout="radioNL(7)" class="radio-show-three">
+                      <a c href="radio-shows/show-page.html"
+                        >> Susu Laroche - Oil</a
+                      >
+                      <br>
+                      A podcast about virtue, food and indulgence. Featuring ASMR cooking with Louis Backhouse, dislikes with CG von Platen, shopping with Freya Field-Donovan and brain food with Shola von Reinhold. + featuring music by El Mahdy Junior, Abu Ama, Severin Black + Owen Pratt, Ramzi and Susu Laroche.
+                    </p>
+                    <p onmouseover="radioHL(8)" onmouseout="radioNL(8)" class="radio-show-four">
+                      <a  href="radio-shows/show-page.html"
+                        >> Alan Lomax – Focus on a Rambler by Jessica Boyall</a
+                      >
+                      <br>
+                      Ethnomusicologist, Alan Lomax, spent much of his life recording folk songs in America, Europe and the West Indies. This show examines how he used sound technology to preserve and share the music of the working classes and repressed minorities. It features music by Lomax, Leadbelly, Memphis Slim, Woody Guthrie, Brian Eno, the United Sacred Harp Convention and more.
+                    </p>
+                </article>
+                <div class="radio-grid">
+                  <img class="radio-img-5" src="images/radio/changing-of-the-gaurd-1200x900.jpg"/>
+                  <img class="radio-img-6" src="images/radio/nosymbols-1200x900.jpg"/>
+                  <img class="radio-img-7" src="images/radio/susu-laroche-1200x900.jpg"/>
+                  <img class="radio-img-8" src="images/radio/jessica-boyall-1200x900.jpg"/>
+                </div>  
+                </div>
+                <!-- Feb Radio Shows -->
+                <div id="feb-14th" class="hide">
+                  <article class="stack">
+                    <header>
+                      <h4>February 14th 2021</h4>
+                    </header>
+                    <p onmouseover="radioHL(1)" onmouseout="radioNL(1)" class="radio-show-one">
+                      <a  href="radio-shows/show-page.html"
+                        >> Note Resolve - Meg Woof</a
+                      >
+                      <br>
+                      Recorded in September 2020, this broadcast was put together to highlight the creative resolve of 
+                      underground experimental music communities since the beginning of the pandemic. 
+                    </p>
+                    <p onmouseover="radioHL(2)" onmouseout="radioNL(2)" class="radio-show-two">
+                      <a  href="radio-shows/show-page.html"
+                        >> Jumpup4jah-3 - Smallboydanger</a
+                      >
+                      <br>
+                      Jumpup4jah-3 - Is the third progression of an audio work deepening an exploration into playing 
+                      mass and black transformation as a technology for the future. T
+                    </p>
+                    <p onmouseover="radioHL(3)" onmouseout="radioNL(3)" class="radio-show-three">
+                      <a c href="radio-shows/show-page.html"
+                        >> Landlocked: music from and related to the films of Black Audio Film Collective - Jim Janco</a
+                      >
+                      <br>
+                      The Black Audio Film Collective, inaugurated in 1982 and dissolved in 1998, are widely credited as one of the 
+                      most influential artist groups to emerge from Britain in the second half of the twentieth century. 
+                      
+                    </p>
+                    <p onmouseover="radioHL(4)" onmouseout="radioNL(4)" class="radio-show-four">
+                      <a  href="radio-shows/show-page.html"
+                        >> Bradford Bailey - The Hum</a
+                      >
+                      <br>
+                      Bradford Bailey (b.1978, USA) is a writer currently based in London. His work - published extensively 
+                      in the form of articles, essays, and liner notes - is dedicated to ideas surrounding sound and music, 
+                      offering particular focus to the exploration of pathways toward mutual aid, shared and cross-cultural 
+                      understanding, collectivism, and community.
+                    </p>
+                </article>
+                <div class="radio-grid">
+                  <img class="radio-img-1" src="images/radio/meg-woof-1200x900.jpg"/>
+                  <img class="radio-img-2" src="images/radio/jumpup4jah-3-1200x900.jpg"/>
+                  <img class="radio-img-3" src="images/radio/jessica-boyall-1200x900.jpg"/>
+                  <img class="radio-img-4" src="images/radio/bradford-bailey-1200x900.jpg"/>
+                </div>  
+                </div>
               </div>
             </div>
       </section>
         <!-- Info -->
         <section class="section-cont stack bgc-info" id="info">
               <!-- Section Header -->
-              <header class="flex-row fit-content">
+              <header class="flex-row">
                 <h2>Info</h2> 
               </header>
               <hr>
-              <div class="inner-cont flex-row">
+              <div class="inner-cont flex-row fnt-sml">
                 <div class="grid-50x50">
-                  <article class="stack fnt-sml">
-                      <h3 class="fnt-md hover-block" id="address">
-                        <a href="https://goo.gl/maps/419ihWEyERvbZ9V77" target="_blank" rel="noopener noreferrer"></a>
+                  <article class="stack">
+                      <h3 class="fnt-md">
+                        <a href="https://goo.gl/maps/419ihWEyERvbZ9V77" target="_blank" rel="noopener noreferrer">
                         ORMSIDE PROJECTS <br />
                         Unit 32 Ormside St <br />
                         Penarth Centre <br />
                         SE15 1TR
                       </a></h3>
-                      <p class="fnt-sml light">
+                      <p>
                       <span class="bold">Ormside Projects ></span> arts & music project space, est 2015.
                       </p>
-                      <p id="links" class="fnt-sml light" >
+                      <p id="links">
                         <span class="bold">People / Links / Past Projects ></span> Mike&nbsp;Levitt, 
-                        <a class="hover-block" href="https://twitter.com/JessicaBoyall1" target="_blank" rel="noopener noreferrer">Jess&nbsp;Boyall</a>, 
+                        <a href="https://twitter.com/JessicaBoyall1" target="_blank" rel="noopener noreferrer">Jess&nbsp;Boyall</a>, 
                         Alina&nbsp;Astrova, 
-                        <a class="hover-block" href="https://5gatetemple.bandcamp.com/" target="_blank" rel="noopener noreferrer">5&nbsp;Gate&nbsp;Temple</a>, 
-                        <a class="hover-block" href="https://www.instagram.com/f_hyperlocal/?hl=en target="_blank" rel="noopener noreferrer">Hyperlocal</a>, 
-                        <a class="hover-block" href="https://www.tate.org.uk/whats-on/tate-modern/performance/nkisi-spiral" target="_blank" rel="noopener noreferrer">Charlie&nbsp;Hope</a>,
-                        <a class="hover-block" href="https://ra.co/podcast/660" target="_blank" rel="noopener noreferrer">NKISI</a>,
-                        <a class="hover-block" href="https://www.aqnb.com/2020/07/21/curtly-thomas/" target="_blank" rel="noopener noreferrer">Curtly&nbsp;Thomas</a>, 
-                        <a class="hover-block" href="https://www.facebook.com/clubcouturexxx-537368339719735" target="_blank" rel="noopener noreferrer">clubcouture</a>, 
+                        <a href="https://5gatetemple.bandcamp.com/" target="_blank" rel="noopener noreferrer">5&nbsp;Gate&nbsp;Temple</a>, 
+                        <a href="https://www.instagram.com/f_hyperlocal/?hl=en target="_blank" rel="noopener noreferrer">Hyperlocal</a>, 
+                        <a href="https://www.tate.org.uk/whats-on/tate-modern/performance/nkisi-spiral" target="_blank" rel="noopener noreferrer">Charlie&nbsp;Hope</a>,
+                        <a href="https://ra.co/podcast/660" target="_blank" rel="noopener noreferrer">NKISI</a>,
+                        <a href="https://www.aqnb.com/2020/07/21/curtly-thomas/" target="_blank" rel="noopener noreferrer">Curtly&nbsp;Thomas</a>, 
+                        <a href="https://www.facebook.com/clubcouturexxx-537368339719735" target="_blank" rel="noopener noreferrer">clubcouture</a>, 
                         Anita, Freya, 
-                        <a class="hover-block" href="https://www.facebook.com/nosymblos/" target="_blank" rel="noopener noreferrer">No&nbsp;Symbols</a>, 
-                        <a class="hover-block" href="https://www.youtube.com/watch?v=EuU1LNGSro4" target="_blank" rel="noopener noreferrer">BALA CLUB</a>,
-                        <a class="hover-block" href="https://www.facebook.com/peopledrift/" target="_blank" rel="noopener noreferrer">People&nbsp;Drift</a>,
-                        <a class="hover-block" href="https://soundcloud.com/jim-janco" target="_blank" rel="noopener noreferrer">Jim&nbsp;Janco</a>, 
-                        <a class="hover-block" href="https://soundcloud.com/severineyveline" target="_blank" rel="noopener noreferrer">Sev</a>, 
+                        <a href="https://www.facebook.com/nosymblos/" target="_blank" rel="noopener noreferrer">No&nbsp;Symbols</a>, 
+                        <a href="https://www.youtube.com/watch?v=EuU1LNGSro4" target="_blank" rel="noopener noreferrer">BALA CLUB</a>,
+                        <a href="https://www.facebook.com/peopledrift/" target="_blank" rel="noopener noreferrer">People&nbsp;Drift</a>,
+                        <a href="https://soundcloud.com/jim-janco" target="_blank" rel="noopener noreferrer">Jim&nbsp;Janco</a>, 
+                        <a href="https://soundcloud.com/severineyveline" target="_blank" rel="noopener noreferrer">Sev</a>, 
                         Sound&nbsp;Check&nbsp;USB,
-                        <a class="hover-block" href="https://lolina.bandcamp.com/" target="_blank" rel="noopener noreferrer">Lolina</a>,
-                        <a class="hover-block" href="https://soundcloud.com/ajpain" target="_blank" rel="noopener noreferrer">AJ&nbsp;Pain</a>,
-                        <a class="hover-block" href="http://www.susularoche.com/" target="_blank" rel="noopener noreferrer">Susu&nbsp;Laroche</a>,
-                        <a class="hover-block" href="https://soundcloud.com/oxhy" target="_blank" rel="noopener noreferrer">OHXY</a>, 
-                        <a class="hover-block" href="https://www.facebook.com/venueM.O.T/" target="_blank" rel="noopener noreferrer">Venue&nbsp;MOT</a>,
-                        <a class="hover-block" href="https://diyspaceforlondon.org/" target="_blank" rel="noopener noreferrer">DIY&nbsp;Space&nbsp;For&nbsp;London</a>,
-                        <a class="hover-block" href="https://www.facebook.com/amgineacoustic" target="_blank" rel="noopener noreferrer">Amgine&nbsp;Acoustic</a>,
+                        <a href="https://lolina.bandcamp.com/" target="_blank" rel="noopener noreferrer">Lolina</a>,
+                        <a href="https://soundcloud.com/ajpain" target="_blank" rel="noopener noreferrer">AJ&nbsp;Pain</a>,
+                        <a href="http://www.susularoche.com/" target="_blank" rel="noopener noreferrer">Susu&nbsp;Laroche</a>,
+                        <a href="https://soundcloud.com/oxhy" target="_blank" rel="noopener noreferrer">OHXY</a>, 
+                        <a href="https://www.facebook.com/venueM.O.T/" target="_blank" rel="noopener noreferrer">Venue&nbsp;MOT</a>,
+                        <a href="https://diyspaceforlondon.org/" target="_blank" rel="noopener noreferrer">DIY&nbsp;Space&nbsp;For&nbsp;London</a>,
+                        <a href="https://www.facebook.com/amgineacoustic" target="_blank" rel="noopener noreferrer">Amgine&nbsp;Acoustic</a>,
                         Fara&nbsp;Fara, 
-                        <a class="hover-block" href="https://soundcloud.com/covco" target="_blank" rel="noopener noreferrer">Covco</a>,
-                        <a class="hover-block" href="https://soundcloud.com/suutoo" target="_blank" rel="noopener noreferrer">Suutoo</a>, 
-                        <a class="hover-block" href="https://www.nts.live/shows/relax-w-reni" target="_blank" rel="noopener noreferrer">RE:LAX</a>, 
-                        <a class="hover-block" href="https://soundcloud.com/shannensp" target="_blank" rel="noopener noreferrer">Shannon&nbsp;SP</a>, 
-                        <a class="hover-block" href="https://soundcloud.com/mellowdramatics94" target="_blank" rel="noopener noreferrer">mellowdramatics</a>, 
-                        <a class="hover-block" href="https://crisisfarm.blogspot.com/" target="_blank" rel="noopener noreferrer">CRISIS&nbsp;FARM</a>,
-                        <a class="hover-block" href="https://www.nts.live/shows/mobbs" target="_blank" rel="noopener noreferrer">Mobbs</a>, 
-                        <a class="hover-block" href="https://twitter.com/jonrust?lang=en" target="_blank" rel="noopener noreferrer">John&nbsp;Rust</a>, 
-                        <a class="hover-block" href="https://ra.co/events/1121686" target="_blank" rel="noopener noreferrer">Joy&nbsp;O</a>, 
-                        <a class="hover-block" href="https://lordtusk.bandcamp.com/" target="_blank" rel="noopener noreferrer">Lord&nbsp;Tusk</a>,
+                        <a href="https://soundcloud.com/covco" target="_blank" rel="noopener noreferrer">Covco</a>,
+                        <a href="https://soundcloud.com/suutoo" target="_blank" rel="noopener noreferrer">Suutoo</a>, 
+                        <a href="https://www.nts.live/shows/relax-w-reni" target="_blank" rel="noopener noreferrer">RE:LAX</a>, 
+                        <a href="https://soundcloud.com/shannensp" target="_blank" rel="noopener noreferrer">Shannon&nbsp;SP</a>, 
+                        <a href="https://soundcloud.com/mellowdramatics94" target="_blank" rel="noopener noreferrer">mellowdramatics</a>, 
+                        <a href="https://crisisfarm.blogspot.com/" target="_blank" rel="noopener noreferrer">CRISIS&nbsp;FARM</a>,
+                        <a href="https://www.nts.live/shows/mobbs" target="_blank" rel="noopener noreferrer">Mobbs</a>, 
+                        <a href="https://twitter.com/jonrust?lang=en" target="_blank" rel="noopener noreferrer">John&nbsp;Rust</a>, 
+                        <a href="https://ra.co/events/1121686" target="_blank" rel="noopener noreferrer">Joy&nbsp;O</a>, 
+                        <a href="https://lordtusk.bandcamp.com/" target="_blank" rel="noopener noreferrer">Lord&nbsp;Tusk</a>,
                         NRG, 
-                        <a class="hover-block" href="https://aircode.bandcamp.com/" target="_blank" rel="noopener noreferrer">Aircode</a>,
-                        <a class="hover-block" href="https://www.nts.live/shows/lawsonbenn" target="_blank" rel="noopener noreferrer">Public Order</a>,
-                        <a class="hover-block" href="https://soundcloud.com/jlte" target="_blank" rel="noopener noreferrer">Jlte</a>, 
-                        <a class="hover-block" href="https://jupiterwoods.com/" target="_blank" rel="noopener noreferrer">Jupiter&nbsp;Woods</a>,
-                        <a class="hover-block" href="https://www.peak-art.org/" target="_blank" rel="noopener noreferrer">Peak&nbsp;London</a>,
-                        <a class="hover-block" href="https://soundcloud.com/acolytesloc" target="_blank" rel="noopener noreferrer">Acolytes</a>,
-                        <a class="hover-block" href="https://www.mixcloud.com/acolderconsciousness/stream/" target="_blank" rel="noopener noreferrer">A&nbsp;Colder&nbsp;Consciousness</a>,
-                        <a class="hover-block" href="http://newnoveta.blogspot.com/" target="_blank" rel="noopener noreferrer">New&nbsp;Noveta</a>,
-                        <a class="hover-block" href="https://paulpurgas.com/" target="_blank" rel="noopener noreferrer">Paul&nbsp;Purgas</a>, 
-                        <a class="hover-block" href="https://www.aqnb.com/2016/07/13/opening-party-fuck-what-they-think-penarth-centre-jul-15/" target="_blank" rel="noopener noreferrer">@Gaybar</a>,
-                        <a class="hover-block" href="https://www.nts.live/shows/body-motion" target="_blank" rel="noopener noreferrer">Body&nbsp;Motion</a>,
+                        <a href="https://aircode.bandcamp.com/" target="_blank" rel="noopener noreferrer">Aircode</a>,
+                        <a href="https://www.nts.live/shows/lawsonbenn" target="_blank" rel="noopener noreferrer">Public Order</a>,
+                        <a href="https://soundcloud.com/jlte" target="_blank" rel="noopener noreferrer">Jlte</a>, 
+                        <a href="https://jupiterwoods.com/" target="_blank" rel="noopener noreferrer">Jupiter&nbsp;Woods</a>,
+                        <a href="https://www.peak-art.org/" target="_blank" rel="noopener noreferrer">Peak&nbsp;London</a>,
+                        <a href="https://soundcloud.com/acolytesloc" target="_blank" rel="noopener noreferrer">Acolytes</a>,
+                        <a href="https://www.mixcloud.com/acolderconsciousness/stream/" target="_blank" rel="noopener noreferrer">A&nbsp;Colder&nbsp;Consciousness</a>,
+                        <a href="http://newnoveta.blogspot.com/" target="_blank" rel="noopener noreferrer">New&nbsp;Noveta</a>,
+                        <a href="https://paulpurgas.com/" target="_blank" rel="noopener noreferrer">Paul&nbsp;Purgas</a>, 
+                        <a href="https://www.aqnb.com/2016/07/13/opening-party-fuck-what-they-think-penarth-centre-jul-15/" target="_blank" rel="noopener noreferrer">@Gaybar</a>,
+                        <a href="https://www.nts.live/shows/body-motion" target="_blank" rel="noopener noreferrer">Body&nbsp;Motion</a>,
                         Soaking,
-                        <a class="hover-block" href="http://www.haunterrecords.com/intro" target="_blank" rel="noopener noreferrer">Haunter&nbsp;Records</a>,
-                        <a class="hover-block" href="https://www.instagram.com/blackobsidian_soundsystem/" target="_blank" rel="noopener noreferrer">B.O.S.S.</a>,
-                        <a class="hover-block" href="https://www.nts.live/" target="_blank" rel="noopener noreferrer">NTS</a>,
-                        <a class="hover-block" href="https://www.instagram.com/noxiouscrush/" target="_blank" rel="noopener noreferrer">noxiouscrush</a>,
-                        <a class="hover-block" href="https://www.instagram.com/awwwwaoffxe/" target="_blank" rel="noopener noreferrer">awwwwa</a>,
-                        <a class="hover-block" href="https://www.mixcloud.com/sunflowerfmfm/20180821-2224-kline/" target="_blank" rel="noopener noreferrer">Klein</a>,
-                        <a class="hover-block" href="https://xenogothic.com/2019/01/11/for-k-punk-2019/" target="_blank" rel="noopener noreferrer">For&nbsp;K-Punk</a>,
+                        <a href="http://www.haunterrecords.com/intro" target="_blank" rel="noopener noreferrer">Haunter&nbsp;Records</a>,
+                        <a href="https://www.instagram.com/blackobsidian_soundsystem/" target="_blank" rel="noopener noreferrer">B.O.S.S.</a>,
+                        <a href="https://www.nts.live/" target="_blank" rel="noopener noreferrer">NTS</a>,
+                        <a href="https://www.instagram.com/noxiouscrush/" target="_blank" rel="noopener noreferrer">noxiouscrush</a>,
+                        <a href="https://www.instagram.com/awwwwaoffxe/" target="_blank" rel="noopener noreferrer">awwwwa</a>,
+                        <a href="https://www.mixcloud.com/sunflowerfmfm/20180821-2224-kline/" target="_blank" rel="noopener noreferrer">Klein</a>,
+                        <a href="https://xenogothic.com/2019/01/11/for-k-punk-2019/" target="_blank" rel="noopener noreferrer">For&nbsp;K-Punk</a>,
                         Unit 21, Winner, Cool&nbsp;Ice&nbsp;Man,
-                        <a class="hover-block" href="https://www.mixcloud.com/sunflowerfmfm/" target="_blank" rel="noopener noreferrer">Sunflower&nbsp;FM</a>,
-                        <a class="hover-block" href="http://musicvenuetrust.com/" target="_blank" rel="noopener noreferrer">Music&nbsp;Venue&nbsp;Trust</a>
+                        <a href="https://www.mixcloud.com/sunflowerfmfm/" target="_blank" rel="noopener noreferrer">Sunflower&nbsp;FM</a>,
+                        <a href="http://musicvenuetrust.com/" target="_blank" rel="noopener noreferrer">Music&nbsp;Venue&nbsp;Trust</a>
                       </p>
-                      <p class="fnt-sml light">
+                      <p>
                         <span class="bold">Commercial ></span> The space is also designed for photo &
                         video productions. Please get in touch for more info at
-                        <a class="hover-block" href="mailto:shoot@ormside.co.uk"
+                        <a id="commercial" href="mailto:shoot@ormside.co.uk"
                           >shoot@ormside.co.uk</a
                         >
                       </p>
-                      <a class="fnt-md bold hover-block fit-content" id="email" href="mailto:contact@ormside.co.uk"
+                      <a class="fnt-md bold " id="email" href="mailto:contact@ormside.co.uk"
                       >contact@ormside.co.uk</a
                       >
                       <form class="mailing-list" action="https://ormiside.us7.list-manage.com/subscribe/post" method="POST" >
@@ -301,34 +403,33 @@
                       <input type="hidden" name="id" value="f6c70865fe">
                       <label class="bold">Mailing List</label>
                       <input
-                      class="fnt-sml bgc-trans"
                       type="email"
                       name="MERGE0"
                       id=""
                       placeholder="email address"
                       />
-                      <button class="fnt-sml bgc-trans hover-block" type="submit">Subscribe</button>
+                      <button type="submit">Subscribe</button>
                       </form>
-                      <div>
+                      <div class="social-links fnt-lg">
                       <a
                       href="https://www.instagram.com/ormsideprojects/"
                       target="_blank"
-                      ><i class="fab fa-instagram fnt-lg"></i
+                      ><i class="fab fa-instagram"></i
                       ></a>
-                      <a class="mrg-left-lg"
+                      <a
                       href="https://www.facebook.com/ormsideprojects/"
                       target="_blank"
-                      ><i class="fab fa-facebook fnt-lg"></i
+                      ><i class="fab fa-facebook"></i
                       ></a>
-                      <a class="mrg-left-lg"
+                      <a
                       href="https://twitter.com/OrmsideProjects"
                       target="_blank"
-                      ><i class="fab fa-twitter fnt-lg"></i>
+                      ><i class="fab fa-twitter"></i>
                       </a>
-                      <a class="mrg-left-lg"
+                      <a
                       href="https://www.youtube.com/channel/UCFV6R74iy8gJfxnpNFPxetg"
                       target="_blank"
-                      ><i class="fab fa-youtube fnt-lg"></i>
+                      ><i class="fab fa-youtube"></i>
                     </a>
                       </div>
                       <img id="ace-logo" src="images/logos/ace-logo.png" alt="">
@@ -360,5 +461,6 @@
     </audio>
   <script async src="js/javascript.js"></script>
   <script async src="js/carousel-new.js"></script>
+  <!--<script async src="js/archive.js"></script>-->
   </body>
 </html>

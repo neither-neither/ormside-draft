@@ -26,46 +26,92 @@
     </nav>
 
     <!-- Projects -->
-    <section class="section-cont" id="radio">
-      <div class="section-inner-cont">
-        <div class="section-sub-inner-cont">
-          <div class="section-panel-cont-artist">
-            <!-- Left Panel -->
-            <div class="section-left-panel">
-              <section class="section-text">
-                <header class="section-text-header">
-                  <h3>Show Title</h3>
-                </header>
-                <article class="section-text-info">
-                  <p id="project-text">Show Info</p>
-                  <br />
-                  <iframe
-                    width="100%"
-                    height="60"
-                    src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&hide_artwork=1&feed=%2Formsideprojects%2Fjumpup4jah-3-smallboydanger-ormside-radio%2F"
-                    frameborder="0"
-                  ></iframe>
-                </article>
-              </section>
-
-              <nav>
-                <a class="archive-link" href="radio-archive.html"
-                  ><i class="fas fa-folder"></i>
-                  <p>Archive</p></a
+    <!-- Radio -->
+    <section class="section-cont stack bgc-radio" id="radio">
+      <!-- Section Header -->
+      <header class="flex-row space-between">
+        <div class="flex-row">
+          <h2>Radio</h2>
+          <nav class="pad-left-std flex-row ali-it-cnt">
+            <button
+              id="radio-btn"
+              class="no-brd bold flex-row ali-it-cnt fnt-lg bgc-trans"
+            >
+              <i class="fas fa-play"></i>
+              <p class="fnt-md pad-left-std" id="radio-btn-text">Play</p>
+            </button>
+          </nav>
+        </div>
+        <!-- Radio Archive -->
+        <div class="dropdown flex-row justify-center">
+          <button class="archive flex-row ali-it-cnt">
+            <i class="fas fa-folder fnt-lg"></i>
+            <p class="pad-left-sm bold">Archive</p>
+          </button>
+          <div class="dropdown-content radio-archive bgc-radio">
+            <p id="mar-22nd-arc">March 22nd</p>
+            <p id="mar-8th-arc">March 8th</p>
+            <p id="feb-14th-arc">Feb 14th</p>
+          </div>
+        </div>
+      </header>
+      <hr />
+      <div class="inner-cont flex-row">
+        <div class="radio-wrapper">
+          <!-- Current Shows -->
+          <div id="march-22nd" class="grid-50x50">
+            <article class="stack fnt-sml light">
+              <header>
+                <h3>Current Shows</h3>
+                <h4>March 22nd 2021</h4>
+              </header>
+              <p class="radio-show-one">
+                <a href="radio-shows/the-changing-of-the-gaurd.html"
+                  >> Love it when u tell me ‘bout ur nightmares - aircode</a
                 >
-                <a class="back-link" href="../#radio"
-                  ><i class="fas fa-arrow-left"></i>
-                  <p>Back</p></a
+                <br />
+                Your nightmares warped in a chaotic soundtrack of distress and
+                comfort.
+              </p>
+              <p class="radio-show-two">
+                <a href="radio-shows/nosymbols.html"
+                  >> Trying to get away? - Oliver Corino</a
                 >
-              </nav>
-            </div>
-            <!--Right Panel-->
-            <div class="section-right-panel">
-              <img
-                id="project-img"
-                src="../images/radio/jumpup4jah-3-lower.jpg"
-                alt=""
-              />
+                <br />
+                Two stories about transcendence. Sleazy Boarding - a short story
+                about a group of dressed up people trying to go on a city break
+                to Prague. Savage Gardens - the story of how Canary Wharf ended
+                up in the derelict docklands of East London. Extract from the
+                first chapter of Architectural Fathers by Canary Wharf.
+              </p>
+              <p class="radio-show-three">
+                <a c href="radio-shows/susu-laroche.html"
+                  >> Threatened Music - Ralph</a
+                >
+                <br />
+                Ralph works in social care. He plays in the bands Permission and
+                Subdued. He also plays improvised music in private. Moving
+                between jazz, hardcore punk, poetry and electronics; traversing
+                continents and timelines from the mid-twenith century to the
+                current moment, Ralph's show makes unexpected connections
+                between a seemingly eclectic variety of practitioners from
+                Archie Sheep to Orden Mundial.
+              </p>
+              <!--
+              <p class="radio-show-four">
+                <a  href="radio-shows/jessica-boyall.html"
+                  >> Alan Lomax – Focus on a Rambler by Jessica Boyall</a
+                >
+                <br>
+                Ethnomusicologist, Alan Lomax, spent much of his life recording folk songs in America, Europe and the West Indies. This show examines how he used sound technology to preserve and share the music of the working classes and repressed minorities. It features music by Lomax, Leadbelly, Memphis Slim, Woody Guthrie, Brian Eno, the United Sacred Harp Convention and more.
+              </p>
+              -->
+            </article>
+            <div class="radio-grid">
+              <img src="images/projects/5-gate-temple-1200x900.jpg" />
+              <img src="images/projects/oxhy-1200x900.jpg" />
+              <img src="images/projects/paul-purgas-1200x900.jpg" />
+              <img src="images/projects/romika-1200x900.jpg" />
             </div>
           </div>
         </div>
