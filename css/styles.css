@@ -183,6 +183,12 @@ input {
   gap: 20px;
 }
 
+.grid img {
+  max-width: 100%;
+  max-height: auto;
+  border: 1px solid red;
+}
+
 .grid-50x50 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
