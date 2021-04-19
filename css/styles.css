@@ -178,7 +178,7 @@ input {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(32ch, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); /* 32ch */
   min-width: 90vw;
   gap: 20px;
 }
@@ -313,10 +313,9 @@ form button:hover {
 }
 
 .home-link {
-  padding: 15px;
   position: fixed;
   right: 0;
-  height: 5rem;
+  height: 4rem;
 }
 
 /* 5.4 Radio */
@@ -411,7 +410,7 @@ form button:hover {
   }
 }
 
-@media only screen and (max-width: 45rem) {
+@media only screen and (max-width: 38.125rem) {
   h1 {
     font-size: 22vw;
   }
