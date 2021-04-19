@@ -186,7 +186,6 @@ input {
 .grid img {
   max-width: 100%;
   max-height: auto;
-  border: 1px solid red;
 }
 
 .grid-50x50 {
@@ -340,6 +339,7 @@ form button:hover {
   outline: 0;
   padding: 4px;
   width: 40%;
+  border-radius: 0;
 }
 
 .mailing-list button {
@@ -404,6 +404,10 @@ form button:hover {
 
   #show-page-title {
     display: none;
+  }
+
+  #ace-logo {
+    width: 45%;
   }
 }
 
