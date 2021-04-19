@@ -96,7 +96,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 :hover {
@@ -153,13 +153,6 @@ input {
   min-width: 90vw;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
-  min-width: 90vw;
-  gap: 20px;
-}
-
 /* 3.2 Flexbox & Grid */
 
 .flex-row {
@@ -179,9 +172,20 @@ input {
   align-items: center;
 }
 
+.justify-cent {
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32ch, 1fr));
+  min-width: 90vw;
+  gap: 20px;
+}
+
 .grid-50x50 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
   gap: 1rem;
   max-width: 100%;
 }
@@ -213,12 +217,6 @@ input {
    ===================================================================================== */
 
 /* 4.1 Typography */
-
-/* 3 uses on the inner containers 
-.fnt-sml {
-  font-size: 0.9rem;
-}
-*/
 
 /* 2 uses */
 .fnt-md {
@@ -263,22 +261,20 @@ input {
 
 /* 4.4 Archive Button */
 
-.archive {
+/* .archive {
   position: relative;
   justify-content: center;
-}
+} */
 
 .archive-btn {
   background: transparent;
   border: none;
   color: black;
-  font-size: 1rem;
-  font-weight: bold;
 }
 
-.archive-btn p {
+/* .archive-btn p {
   margin-left: 0.5rem;
-}
+} */
 
 /* 4.5 Hover */
 
@@ -322,7 +318,7 @@ form button:hover {
 
 #radio button,
 #radio button p {
-  padding-left: 1rem;
+  margin-left: 1rem;
 }
 
 /* 5.5 Info */
@@ -347,7 +343,7 @@ form button:hover {
 
 .social-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 5rem);
+  grid-template-columns: repeat(auto-fit, 4rem);
 }
 
 #ace-logo {
@@ -383,12 +379,29 @@ form button:hover {
    6. Media Queries
    ===================================================================================== */
 
-/* CHANGE TO REM??? */
 @media only screen and (max-width: 56rem) {
   .home-link {
     display: none;
   }
 
+  #radio-btn-text {
+    display: none;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  #email {
+    font-size: 1.5em;
+  }
+
+  #show-page-title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 45rem) {
   h1 {
     font-size: 22vw;
   }
