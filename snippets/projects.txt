@@ -1,0 +1,51 @@
+<!-- 5 Gate Temple -->
+                 <div id="project-1" class="hide">
+              <article class="stack fnt-sml light">
+                <header>
+                  <h3>5 GATE TEMPLE SUMMER RECITAL</h3>
+                  <h4>Spring 2021</h4>
+                </header>
+                <a href="https://5gatetemple.bandcamp.com/" target="_blank" rel="noopener noreferrer">> 5 Gate Temple on Bandcamp</a>
+                <p>Live manifestation of a new 5 Gate Temple release.</p>
+                <p>More information soon.</p>
+              </article>
+                <img
+                  src="images/projects/5-gate-temple-1200x900.jpg"
+                  alt="woman standing infront of wrecked car"
+                />
+                </div>
+            <!-- Paul Purgas -->
+                <div id="project-2" class="hide">
+              <article class="stack fnt-sml light">
+                  <header>
+                    <h3>Uprising: South London Industrial Map</h3>
+                    <h4>21st March 2021 4pm</h4>
+                  </header>
+                  <p>
+                      Map & audio guide exploring the history of Industrial music in South London during the 1980's, uncovering the network of venues and squats that formed the foundation of the scene in the area, and the music that beat a defiant soundtrack against an era of cultural oppression, economic decline and aggressive corporate political organisation.
+                  </p>
+                  <p>A research project by Paul Purgas.</p>
+              </article>
+                <img src="images/projects/paul-purgas-1200x900.jpg" alt="woman standing infront of wrecked car" />
+                </div>
+            <!-- Romika -->
+                <div id="project-3" class="hide">
+                <article class="stack fnt-sml light">
+                  <header>
+                    <h3>Romika TV: Valentines</h3>
+                    <h4>Sunday Feb 14th 2021 4pm</h4>
+                  </header>
+                  <a href="https://www.twitch.tv/romikatv" target="_blank" rel="noopener noreferrer">> Watch on Twitch</a>
+                  <p>Romika invites you to watch TV all afternoon into night on 14th February.</p>
+                  <p>
+                    Indoors, alone, to celebrate the mystery, tragedy and glamour of love.
+                  </p>
+                  <p>International, internationalist, broadcasting from Ormside to the cosmos. Join us on Romika TV 🌹</p>
+                  <p>With DJs: Nikola Vitković, Vedma, Devica/ACC (Palermo), Candy Sez, Katie Shannon (DJ/LIVE), Somnambulist</p>
+                  <p>Live sets/performances from: Adam Christensen, CECILIA, Vindicatrix, Sophie Sleigh-Johnson, Clup Alpino (Poland), Franziska Lantz, Sean Colum ( Tokyo), Robert Jack + Federico Lupo, Lucia Udvardyova/Palmovka (Budapest) + more TBC</p>
+                </article>
+                  <img
+                    src="images/projects/romika-1200x900.jpg"
+                    alt="woman standing infront of wrecked car"
+                  />
+                </div>

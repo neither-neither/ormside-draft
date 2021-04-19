@@ -1,0 +1,39 @@
+/* The container for each individual section of the website */
+.section-cont {
+  min-height: 100vh; /* makes the height of each section be the minimum height of the viewport */
+  padding: 5vh 5vw; /* changed from rem units as they didnt seem to scale in the same way */
+  scroll-snap-align: start; /* snaps the scroll to the top of the section */
+  /*max-height: auto; */ /* allows the height to scale to the content - could also use fit content or remove altogether? */
+  /*overflow: scroll;*/ /* removed as I don't think I need it as the max-height will grow the section automatically */
+  /*max-width: 90%;*/ /* removed as using padding to control width   */
+  /*margin: 0 auto;*/ /* removed as using padding instead of margin  */
+}
+
+/* The inner container that holds the content */
+.inner-cont {
+  min-width: 90vw; /* makes the width consistent */
+}
+
+/* Container that wraps around the grid-50x50 that will enable a 
+flash effect when content changes  e.g projects and archive content */
+.flash-wrapper {
+  min-width: 100%;
+}
+
+.flash-wrapper article {
+  font-weight: lighter;
+}
+
+.grid-50x50 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem; /* gives needed space when the grid is vertical */
+  max-width: 100%;
+
+  /*align-self: flex-start;*/
+}
+
+/* Controls how much space the image on the right hand size of the grid takes up of its container */
+.grid-50x50 img {
+  max-width: 100%;
+}
