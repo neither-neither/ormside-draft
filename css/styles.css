@@ -208,9 +208,9 @@ input {
   max-width: 100%;
 }
 
-.grid-50x50 article {
+/* .grid-50x50 article {
   max-width: 65ch;
-}
+} */
 
 .grid-50x50 img {
   max-width: 100%;

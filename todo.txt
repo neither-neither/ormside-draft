@@ -1,4 +1,8 @@
-sort out the image on the project page not being in the correct place
+sort out the image on the project page not being in the correct place - still an issue?
+
+refactor code, especially CSS
+
+view tracklist button
 
 ormsideprojects@gmail.com
 4tCx8rWWemXba4s_

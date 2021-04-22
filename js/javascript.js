@@ -15,25 +15,3 @@ radioBtn.addEventListener("click", () => {
     radioBtn.value = "on";
   }
 });
-
-// Info Slideshow
-
-$("#slideshow > div:gt(0)").hide();
-
-setInterval(function () {
-  $("#slideshow > div:first")
-    .fadeOut(2000)
-    .next()
-    .fadeIn(2000)
-    .end()
-    .appendTo("#slideshow");
-}, 8000);
-
-function radioHL(show) {
-  document.querySelector(`.radio-img-${show}`).style.boxShadow =
-    "0px 8px 16px 0px rgba(0, 0, 0, .7)";
-}
-
-function radioNL(show) {
-  document.querySelector(`.radio-img-${show}`).style.boxShadow = "none";
-}
