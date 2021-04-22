@@ -10,8 +10,7 @@
       4.1 Layout
       4.2 Typography
       4.3 Border, margin, padding
-      4.4 Archive Menu
-      4.5 Hover
+      4.4 Hover
    5. Sections
       5.1 Site Header
       5.2 Navigation
@@ -104,12 +103,8 @@ h2 {
   font-size: 1rem;
 }
 
-:hover {
-  transition: 0.2s ease-out;
-}
-
-button:hover {
-  cursor: pointer;
+#artist h4 {
+  font-size: 1.8rem;
 }
 
 p {
@@ -124,12 +119,6 @@ a {
 
 .grid a p {
   font-weight: normal;
-}
-
-a:hover,
-button:hover {
-  cursor: pointer;
-  opacity: 0.5;
 }
 
 article > header {
@@ -152,14 +141,6 @@ input {
   min-height: 100vh;
   padding: 5vh 5vw;
   scroll-snap-align: start;
-}
-
-#artist {
-  scroll-snap-align: none;
-}
-
-#artist h4 {
-  font-size: 1.8rem;
 }
 
 .inner-cont {
@@ -245,7 +226,7 @@ input {
   font-size: 1em;
 }
 
-/* 9 uses - header nav links, project nav, archive logo, social links  */
+/* 10 uses - header nav links, project nav, archive logo, social links */
 .fnt-lg {
   font-size: 2em;
 }
@@ -281,24 +262,21 @@ input {
   background-color: var(--info-color);
 }
 
-/* 4.4 Archive Button */
+/* 4.4 Hover */
 
-/* .archive {
-  position: relative;
-  justify-content: center;
-} */
-
-.archive-btn {
-  background: transparent;
-  border: none;
-  color: black;
+:hover {
+  transition: 0.2s ease-out;
 }
 
-/* .archive-btn p {
-  margin-left: 0.5rem;
-} */
+button:hover {
+  cursor: pointer;
+}
 
-/* 4.5 Hover */
+a:hover,
+button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
 
 #email:hover,
 #commercial:hover,
@@ -342,6 +320,10 @@ form button:hover {
   margin-left: 1rem;
 }
 
+#artist {
+  scroll-snap-align: none;
+}
+
 /* 5.5 Info */
 
 #links a {
@@ -370,31 +352,6 @@ form button:hover {
 
 #ace-logo {
   width: 25%;
-}
-
-#slideshow {
-  position: relative;
-  max-width: 100%;
-}
-
-#slideshow > div {
-  position: absolute;
-}
-
-/* SORT OUT !!!! */
-
-.back-link {
-  align-items: center;
-  display: flex;
-  font-size: 2rem;
-  padding-top: 1rem;
-  text-decoration: none;
-}
-
-.back-link p {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-left: 1rem;
 }
 
 /* =====================================================================================  
@@ -436,11 +393,3 @@ form button:hover {
     font-size: 22vw;
   }
 }
-
-/*
-@media only screen and (max-width: 1200px) {
-  .radio-grid img {
-    min-width: 100%;
-  }
-}
-*/
