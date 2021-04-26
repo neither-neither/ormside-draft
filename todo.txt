@@ -1,8 +1,9 @@
-sort out the image on the project page not being in the correct place - still an issue?
 
 refactor code, especially CSS
 
-view tracklist button - add to other tracklists
-
+Mailchimp
 ormsideprojects@gmail.com
 4tCx8rWWemXba4s_
+
+get safari layout working
+sort out the image on the project page not being in the correct place - still an issue?

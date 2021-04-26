@@ -172,7 +172,7 @@ input {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); /* 32ch */
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   min-width: 90vw;
   gap: 20px;
 }
