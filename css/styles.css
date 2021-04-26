@@ -184,9 +184,9 @@ input {
 
 .grid-50x50 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
-  gap: 4rem;
-  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(43vw, 1fr));
+  gap: 2rem;
+  max-width: 90vw;
 }
 
 /* .grid-50x50 article {
@@ -395,9 +395,9 @@ form button:hover {
     font-size: 1.5em;
   }
 
-  #show-page-title {
+  /* #show-page-title {
     display: none;
-  }
+  } */
 
   .mailing-list input {
     width: 40%;
@@ -407,9 +407,9 @@ form button:hover {
     width: 45%;
   }
 
-  .grid-50x50 {
+  /* .grid-50x50 {
     gap: 2rem;
-  }
+  } */
 
   .section-cont > a {
     position: relative;
