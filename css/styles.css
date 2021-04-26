@@ -313,6 +313,13 @@ form button:hover {
   height: 4rem;
 }
 
+.section-cont > a {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+
 /* 5.4 Radio */
 
 #radio button,
@@ -324,7 +331,12 @@ form button:hover {
   scroll-snap-align: none;
 }
 
-.tracklist-link {
+.video {
+  width: 100%;
+  height: 420px;
+}
+
+.tracklist-link:hover {
   cursor: pointer;
 }
 
@@ -344,7 +356,7 @@ form button:hover {
   border-color: #000;
   outline: 0;
   padding: 4px;
-  width: 40%;
+  width: 20%;
   border-radius: 0;
 }
 
@@ -359,7 +371,7 @@ form button:hover {
 }
 
 #ace-logo {
-  width: 25%;
+  width: 10%;
 }
 
 /* =====================================================================================  
@@ -387,12 +399,26 @@ form button:hover {
     display: none;
   }
 
+  .mailing-list input {
+    width: 40%;
+  }
+
   #ace-logo {
     width: 45%;
   }
 
   .grid-50x50 {
     gap: 2rem;
+  }
+
+  .section-cont > a {
+    position: relative;
+    padding: 0;
+  }
+
+  .video {
+    width: 100%;
+    height: 315px;
   }
 }
 
